@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="15dp"
+    android:paddingRight="25dp"
+    android:background="@drawable/dialog_shape">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+    </TextView>
+    <TextView
+        android:id="@+id/tv_group_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textSize="14sp"
+        android:textColor="@color/title_color"
+        android:layout_marginStart="5dp"
+        />
+
+    <ImageView
+        android:id="@+id/iv_indicator"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/tv_group_name"
+        android:layout_marginStart="5dp"
+        android:src="@mipmap/iv_indicator"
+        android:layout_width="25dp"
+        android:layout_height="25dp"/>
+    <com.tidyclean.storagecleaner.view.MyRotatingRingView
+        android:id="@+id/rotatingRingView"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        app:ringWidth="2dp"
+        app:ringColor="@color/theme_color"
+        app:backgroundColor="#33145DFF" />
+    <ImageView
+        android:id="@+id/iv_check"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ic_check"
+     />
+
+    <TextView
+        android:id="@+id/tv_size"
+        android:layout_marginRight="40dp"
+        android:textSize="14sp"
+        android:textColor="@color/title_color"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+
+</RelativeLayout>

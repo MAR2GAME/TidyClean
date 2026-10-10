@@ -1,0 +1,30 @@
+
+{
+  "project_info": {
+    "project_number": "873431583316",
+    "project_id": "tidy-clean-storage-cleaner",
+    "storage_bucket": "tidy-clean-storage-cleaner.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:873431583316:android:75d5c5455d09e0f873fbc1",
+        "android_client_info": {
+          "package_name": "com.tidyclean.storagecleaner"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQmvIFAGB24Mp8iGiWox5RmvS0PBRCIKQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

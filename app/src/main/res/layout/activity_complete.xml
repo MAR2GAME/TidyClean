@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.CompleteActivity">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:src="@mipmap/ic_back" />
+    <ImageView
+        android:id="@+id/iv_success"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/ic_finish"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="10dp"
+        app:lottie_autoPlay="true"
+        />
+    <TextView
+        android:id="@+id/tv_title"
+        android:text="@string/task_complete"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/title_color"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_marginTop="5dp"
+        android:text="@string/task_complete"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/hint_color"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <RelativeLayout
+        android:id="@+id/rl_task1"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/info_shape"
+        android:layout_marginTop="30dp"
+        android:layout_height="135dp">
+        <ImageView
+            android:id="@+id/iv_task1"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+        </ImageView>
+        <TextView
+            android:id="@+id/tv_task1"
+            android:textColor="@color/title_color"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_toRightOf="@id/iv_task1"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+            android:id="@+id/tv_hint1"
+            android:layout_below="@id/tv_task1"
+            android:textColor="@color/hint_color"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_toRightOf="@id/iv_task1"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/tv_next1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@id/iv_task1"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:textColor="@color/theme_color"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_task2"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/info_shape"
+        android:layout_marginTop="15dp"
+        android:layout_height="135dp">
+
+        <ImageView
+            android:id="@+id/iv_task2"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+        </ImageView>
+        <TextView
+            android:id="@+id/tv_task2"
+            android:textColor="@color/title_color"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_toRightOf="@id/iv_task2"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+            android:id="@+id/tv_hint2"
+            android:layout_below="@id/tv_task2"
+            android:textColor="@color/hint_color"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_toRightOf="@id/iv_task2"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+            android:id="@+id/tv_next2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@id/iv_task2"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:textColor="@color/theme_color"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

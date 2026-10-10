@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.tidyclean.storagecleaner.ui.ScanPhoneActivity">
+
+    <TextView
+        android:id="@+id/tv_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="60dp"
+        android:textColor="#666666"
+        android:visibility="gone"
+        android:text="@string/skip"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    
+    <RelativeLayout
+        android:id="@+id/rl_scan"
+        android:layout_marginTop="160dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="240dp"
+        android:layout_height="240dp">
+        <ImageView
+            android:src="@mipmap/scan_phone_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ImageView>
+        <ImageView
+            android:id="@+id/iv_scan_phone"
+            android:src="@mipmap/iv_scan_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ImageView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:visibility="gone"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/ll_info"
+            android:background="@drawable/info_shape"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_storage_hint"
+                    android:text="@string/storage"
+                    android:textSize="16sp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#8190A5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <TextView
+                    android:id="@+id/tv_storage"
+                    android:layout_marginTop="5dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="128GB/256GB"
+                    android:textColor="@color/title_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_percentage_hint"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/percentage"
+                    android:textSize="16sp"
+                    android:textColor="#8190A5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <TextView
+                    android:id="@+id/tv_percentage"
+                    android:layout_below="@id/tv_percentage_hint"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"
+                    android:text="60%"
+                    android:textColor="@color/title_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+            </LinearLayout>
+            <ImageView
+                android:src="@mipmap/iv_phone"
+                android:layout_gravity="center_vertical"
+                android:layout_width="75dp"
+                android:layout_height="75dp">
+            </ImageView>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rc_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_info"
+            android:layout_marginTop="10dp" />
+        <Button
+            android:id="@+id/bt_clean"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn_selector"
+            android:layout_marginBottom="90dp"
+            android:text="@string/junk_removal"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="@color/text_seletor"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/tv_hint1"
+        android:textSize="18sp"
+        android:textColor="@color/title_color"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="140dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:text="@string/checking_device_information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+    <TextView
+        android:id="@+id/tv_hint2"
+        android:textSize="16sp"
+        android:textColor="#8190A5"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:text="@string/checking_device_hint"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="90dp"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content">
+    </TextView>
+
+</RelativeLayout>

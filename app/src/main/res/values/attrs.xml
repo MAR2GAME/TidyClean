@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RotatingRingView">
+        <attr name="ringWidth" format="dimension" />
+        <attr name="ringColor" format="color" />
+        <attr name="backgroundColor" format="color" />
+        <attr name="animationDuration" format="integer" />
+        <attr name="arcLength" format="float" />
+    </declare-styleable>
+
+
+
+</resources>

@@ -1,0 +1,231 @@
+{
+  "package_name": "com.tidyclean.storagecleaner",
+  "global_ad_switch": true,
+  "first_open_enabled": true,
+  "limited": 50,
+  "limited_loadtime_seconds": 86400,
+  "totalClickMaxPerDay": 6,
+  "totalRequestMaxPerDay": 300,
+  "ad_units": [
+    {
+      "areakey": "openPageAdv",
+      "rate": 1,
+      "frequency_caps": {
+        "max_per_hour": 4,
+        "max_per_day": 20,
+        "interval_seconds": 0
+      },
+      "show_delay_seconds": 0
+    },
+    {
+      "areakey": "foreGroundAdv",
+      "rate": 1,
+      "frequency_caps": {
+        "max_per_hour": 4,
+        "max_per_day": 20,
+        "interval_seconds": 30
+      },
+      "show_delay_seconds": 0
+    },
+    {
+      "areakey": "openMainBottomAdv",
+      "rate": 0,
+      "frequency_caps": {
+        "max_per_hour": 5,
+        "max_per_day": 5,
+        "interval_seconds": 0
+      },
+      "show_delay_seconds": 0
+    },
+    {
+      "areakey": "newGuideSkipAdv",
+      "rate": 1,
+      "frequency_caps": {
+        "max_per_hour": 5,
+        "max_per_day": 10,
+        "interval_seconds": 0
+      },
+      "show_delay_seconds": 0
+    },
+    {
+      "areakey": "fileAccessCancelAdv",
+      "rate": 1,
+      "frequency_caps": {
+        "max_per_hour": 5,
+        "max_per_day": 10,
+        "interval_seconds": 0
+      },
+      "show_delay_seconds": 0
+    },
+    {
+      "areakey": "mainJunkCleanFinishAdv",
+      "rate": 1,
+      "frequency_caps": {
+        "max_per_hour": 5,
+        "max_per_day": 10,
+        "interval_seconds": 0
+      },
+      "show_delay_seconds": 0
+    },
+    {
+      "areakey": "mainFileManageFinishAdv",
+      "rate": 1,
+      "frequency_caps": {
+        "max_per_hour": 5,
+        "max_per_day": 10,
+        "interval_seconds": 0
+      },
+      "show_delay_seconds": 0
+    },
+    {
+      "areakey": "mainSpeakerCleanFinishAdv",
+      "rate": 1,
+      "frequency_caps": {
+        "max_per_hour": 5,
+        "max_per_day": 10,
+        "interval_seconds": 0
+      },
+      "show_delay_seconds": 0
+    },
+    {
+      "areakey": "mainJunkCleanAdv",
+      "rate": 1,
+      "frequency_caps": {
+        "max_per_hour": 5,
+        "max_per_day": 10,
+        "interval_seconds": 0
+      },
+      "show_delay_seconds": 0
+    },
+    {
+      "areakey": "mainAppUsageAdv",
+      "rate": 1,
+      "frequency_caps": {
+        "max_per_hour": 5,
+        "max_per_day": 10,
+        "interval_seconds": 0
+      },
+      "show_delay_seconds": 0
+    },
+    {
+      "areakey": "mainSpeakerCleanAdv",
+      "rate": 1,
+      "frequency_caps": {
+        "max_per_hour": 5,
+        "max_per_day": 10,
+        "interval_seconds": 0
+      },
+      "show_delay_seconds": 0
+    },
+    {
+      "areakey": "mainDeviceInfoAdv",
+      "rate": 1,
+      "frequency_caps": {
+        "max_per_hour": 5,
+        "max_per_day": 10,
+        "interval_seconds": 0
+      },
+      "show_delay_seconds": 0
+    },
+    {
+      "areakey": "mainBatteryInfoAdv",
+      "rate": 1,
+      "frequency_caps": {
+        "max_per_hour": 5,
+        "max_per_day": 10,
+        "interval_seconds": 0
+      },
+      "show_delay_seconds": 0
+    },
+    {
+      "areakey": "mainFileManageAdv",
+      "rate": 1,
+      "frequency_caps": {
+        "max_per_hour": 5,
+        "max_per_day": 10,
+        "interval_seconds": 0
+      },
+      "show_delay_seconds": 0
+    },
+    {
+      "areakey": "returnFromJunkCleanAdv",
+      "rate": 1,
+      "frequency_caps": {
+        "max_per_hour": 5,
+        "max_per_day": 10,
+        "interval_seconds": 0
+      },
+      "show_delay_seconds": 0
+    },
+    {
+      "areakey": "returnFromAppUsageAdv",
+      "rate": 1,
+      "frequency_caps": {
+        "max_per_hour": 5,
+        "max_per_day": 10,
+        "interval_seconds": 0
+      },
+      "show_delay_seconds": 0
+    },
+    {
+      "areakey": "returnFromSpeakerCleanAdv",
+      "rate": 1,
+      "frequency_caps": {
+        "max_per_hour": 5,
+        "max_per_day": 10,
+        "interval_seconds": 0
+      },
+      "show_delay_seconds": 0
+    },
+    {
+      "areakey": "returnFromDeviceInfoAdv",
+      "rate": 1,
+      "frequency_caps": {
+        "max_per_hour": 5,
+        "max_per_day": 10,
+        "interval_seconds": 0
+      },
+      "show_delay_seconds": 0
+    },
+    {
+      "areakey": "returnFromBatteryInfoAdv",
+      "rate": 1,
+      "frequency_caps": {
+        "max_per_hour": 5,
+        "max_per_day": 10,
+        "interval_seconds": 0
+      },
+      "show_delay_seconds": 0
+    },
+    {
+      "areakey": "returnFromFileManageAdv",
+      "rate": 1,
+      "frequency_caps": {
+        "max_per_hour": 5,
+        "max_per_day": 10,
+        "interval_seconds": 0
+      },
+      "show_delay_seconds": 0
+    },
+    {
+      "areakey": "uninstallOneAdv",
+      "rate": 1,
+      "frequency_caps": {
+        "max_per_hour": 5,
+        "max_per_day": 10,
+        "interval_seconds": 0
+      },
+      "show_delay_seconds": 0
+    },
+    {
+      "areakey": "uninstallTwoAdv",
+      "rate": 1,
+      "frequency_caps": {
+        "max_per_hour": 5,
+        "max_per_day": 10,
+        "interval_seconds": 0
+      },
+      "show_delay_seconds": 0
+    }
+  ]
+}

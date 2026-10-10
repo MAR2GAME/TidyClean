@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="530dp"
+    android:background="@drawable/dialog_shape">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:gravity="center"
+        android:textColor="@color/title_color"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rc_tag"
+        android:padding="10dp"
+        android:layout_below="@id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="360dp">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/bt_confirm"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/rc_tag"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_selector"
+        android:text="@string/confirm"
+        android:textAllCaps="false"
+        android:textColor="@color/text_seletor"
+        android:textSize="20sp" />
+</RelativeLayout>

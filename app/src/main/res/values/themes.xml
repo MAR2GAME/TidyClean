@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.TidyClean" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme.TranslucentBlack" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">#80000000</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <!-- 可选：使状态栏半透明 -->
+        <item name="android:windowTranslucentStatus">true</item>
+        <!-- 可选：使导航栏半透明 -->
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+</resources>

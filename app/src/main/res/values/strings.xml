@@ -1,0 +1,253 @@
+<resources>
+    <string name="app_name">TidyClean</string>
+    <string name="splash_hint">By proceeding, you confirm you accept our Terms of Service | Privacy Policy</string>
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="skip">skip</string>
+    <string name="checking_device_information">Checking device information</string>
+    <string name="checking_device_hint">Attention:To find junk files completely, the first scan may take a little time</string>
+    <string name="storage">STORAGE</string>
+    <string name="storage_hint">Storage</string>
+    <string name="percentage">Percentage</string>
+    <string name="junk_removal">Junk Removal</string>
+    <string name="overcooling">overcooling</string>
+    <string name="damage">damage</string>
+    <string name="good">good</string>
+    <string name="overheat">overheat</string>
+    <string name="overvoltage">overvoltage</string>
+    <string name="unknown">unknown</string>
+    <string name="fault">fault</string>
+    <string name="device_model">Device model</string>
+    <string name="system_version">System version</string>
+    <string name="screen_resolution">Screen resolution</string>
+    <string name="battery_health_status">Battery health status</string>
+    <string name="storage_usage">Storage usage</string>
+    <string name="generating_cleanup_plan">Generating cleanup plan</string>
+    <string name="to_done">Done</string>
+    <string name="not_found">not found</string>
+    <string name="used_space">Used space</string>
+    <string name="turn_it_on">Tip Find TidyClean and turn it on</string>
+
+    <string name="scanning">Scanning</string>
+    <string name="junk_delete_hint">No personal data is deleted in this process</string>
+    <string name="delete_hint">No personal data is deleted in this process</string>
+    <string name="rate_us">Rate Us</string>
+
+    <string name="junk_selected">Junk Selected</string>
+    <string name="have_been_cleared">have been cleared</string>
+    <string name="junk_files">Junk files</string>
+    <string name="clean_now">Clean Now</string>
+    <string name="file_management">File management</string>
+
+    <string name="large_files">Large Files</string>
+    <string name="large_file_cleaner">Large File Cleaner</string>
+
+    <string name="please_wait_with_status">Please wait a moment, %1$s</string>
+
+    <string name="images">Images</string>
+    <string name="video">Videos</string>
+    <string name="audio">Audios</string>
+    <string name="documents">Documents</string>
+
+    <string name="battery_status_charging">Charging</string>
+    <string name="battery_status_discharging">Discharging</string>
+    <string name="battery_status_not_charging">Not charging</string>
+    <string name="battery_status_full">Full</string>
+    <string name="charging_plug_usb">USB charging</string>
+    <string name="charging_plug_ac">AC charging</string>
+    <string name="charging_plug_wireless">Wireless charging</string>
+    <string name="charging_plug_dock">Dock charging</string>
+    <string name="not_charging">Not plugged in</string>
+
+    <string name="battery_status">Battery status</string>
+
+
+    <string name="scanning_for_battery_info">Scanning for battery info..</string>
+    <string name="scanning_for_device_info">Scanning for device info..</string>
+
+    <string name="temperature">Temperature</string>
+    <string name="voltage">Voltage</string>
+
+    <string name="health">Health</string>
+    <string name="life">Life</string>
+    <string name="scanning_large_file">Scanning large files..</string>
+    <string name="scanning_images">Scanning images..</string>
+    <string name="scanning_videos">Scanning videos..</string>
+    <string name="scanning_audio_files">Scanning audio files..</string>
+    <string name="scanning_documents">Scanning documents..</string>
+
+    <string name="battery_information">Battery Information</string>
+    <string name="battery">Battery</string>
+
+    <string name="manager_videos">Manager Videos</string>
+    <string name="manager_audios">Manager Audios</string>
+    <string name="manager_documents">Manager Documents</string>
+    <string name="manager_images">Manager Images</string>
+    <string name="manager_files">Manager Large Files</string>
+
+    <string name="stop">Stop</string>
+    <string name="scanning_in_progress">Scanning in progress. Are you sure want to stop?</string>
+    <string name="cleaning_in_progress">junk file found. Are you sure want to stop?</string>
+    <string name="continue_btn">Continue</string>
+    <string name="ok">OK</string>
+    <string name="obsolete_files">Obsolete files</string>
+    <string name="residuals">Residuals</string>
+    <string name="ad_junk">Ad Junk</string>
+    <string name="trash_items">Trash Items</string>
+    <string name="remove_junk">Remove Junk</string>
+    <string name="very_clean">Your phone is very clean.</string>
+    <string name="task_complete">Task Complete</string>
+    <string name="failed_to_obtain_battery_information">Failed to obtain battery information</string>
+
+    <string name="battery_info">Battery Info</string>
+    <string name="battery_info_hint">check battery status</string>
+    <string name="device_info">Device Info</string>
+    <string name="device_info_hint">View device hardware info</string>
+
+
+    <string name="cpu_hardware">CPU Hardware</string>
+    <string name="cpu_model">CPU Model</string>
+    <string name="cpu_cores">CPU Cores</string>
+    <string name="cpu_frequency">CPU Frequency</string>
+
+    <string name="select_all">Select All</string>
+    <string name="all_types">All Types</string>
+    <string name="all_size">All Size</string>
+    <string name="delete">Delete</string>
+    <string name="confirm">Confirm</string>
+    <string name="apk">Apk</string>
+
+    <string name="scan_now">Scan Now</string>
+    <string name="view_now">View   Now</string>
+
+
+    <string name="remove_junk_hint">scan and organize files</string>
+
+    <string name="size">Size</string>
+    <string name="type">Type</string>
+
+    <string name="back_to_main_page">Back To Main Page</string>
+    <string name="delete_size_format">Delete %1$s</string>
+    <string name="delete_selected_files_hint">Do you want to delete the selected files?</string>
+
+    <string name="home">Home</string>
+    <string name="tool">Tool</string>
+    <string name="settings">Settings</string>
+    <string name="app_usage">App Usage</string>
+    <string name="app_usage_hint">View screen time for apps</string>
+    <string name="cleaning_countdown_format">Cleaning (%1$s s)</string>
+    <string name="please_wait_a_moment">Please wait a moment</string>
+    <string name="cleaning">Cleaning...</string>
+    <string name="speaker_hint">There will be vibration and sound during speaker cleaning,which is normal!</string>
+    <string name="start">Start</string>
+    <string name="speaker_back_hint">Cleaning,please wait a moment</string>
+
+    <string name="click_the_button_to_start_cleaning">Click the button to start cleaning</string>
+    <string name="clean_dust_hint">There will be vibration and sound during speaker cleaning, which is normal!</string>
+
+    <string name="speaker_cleaner">Speaker cleaner</string>
+    <string name="speaker_cleaner_hint">Audio frequency and vibration assistant</string>
+
+    <string name="allow_btn">Allow</string>
+    <string name="cancel">Cancel</string>
+    <string name="exit_app">Exit app?</string>
+    <string name="exit_app_hint">Sure you want to exit the app now?</string>
+    <string name="exit">Exit</string>
+    <string name="update_hint">The update has been downloaded and completed</string>
+    <string name="update">Update</string>
+    <string name="submit">Submit</string>
+
+    <string name="app_not_found">App not found</string>
+    <string name="manage">Manage</string>
+
+    <string name="rate_us_title">Thank you for using this app</string>
+    <string name="rate_us_hint">We would be very grateful if you could rate us 5 stars！</string>
+
+    <string name="feedback">We sincerely appreciate your feedback.</string>
+
+    <string name="app_usage_empty">No app usage data found.</string>
+    <string name="save">save</string>
+    <string name="share">Share</string>
+
+
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="last_7_days">Last 7 days</string>
+    <string name="last_30_days">last 30 days</string>
+    <string name="unable_to_open_permission">Unable to open permission settings page, please grant permission manually.</string>
+    <string name="hours_spent">Hours spent</string>
+    <string name="times_opened">Times opened</string>
+    <string name="other">Other</string>
+
+    <string name="app_usage_duration_less_than_minute">&lt;1 min</string>
+    <string name="app_usage_duration_hours_minutes">%1$d h %2$d min</string>
+    <string name="app_usage_duration_hours">%1$d h</string>
+    <string name="app_usage_duration_hours_zero_minutes">%1$d h 0 min</string>
+    <string name="app_usage_duration_minutes">%1$d min</string>
+
+
+    <string name="access_required">Access Required</string>
+    <string name="permission_is_required">Permission is Required</string>
+    <string name="usage_permission_dialog_hint">Grant Access to Usage Data</string>
+    <string name="dialog_permission_hint">Please allow access to use this feature</string>
+    <string name="will_not_share_private_data">Won\'t share private data</string>
+    <string name="will_not_collect_private_data">Won\'t collect private data</string>
+    <string name="check_now">Check Now</string>
+
+
+    <string name="current_capacity">Current Capacity</string>
+    <string name="total_capacity">Total Capacity</string>
+    <string name="charging_status">Charging Status</string>
+    <string name="battery_technology">Battery Technology</string>
+    <string name="state_info">State Info</string>
+    <string name="CPU">CPU</string>
+    <string name="RAM">RAM</string>
+    <string name="screen">Screen</string>
+    <string name="screen_size">Screen size</string>
+    <string name="screen_density">Screen Density</string>
+    <string name="screen_multipletouch_support">Screen Multiple-touch Support</string>
+    <string name="sensors">Sensors</string>
+    <string name="accelerometer_sensor">Accelerometer Sensor</string>
+    <string name="magnetic_filed_sensor">Magnetic Filed Sensor</string>
+    <string name="orientation_sensor">Orientation Sensor</string>
+    <string name="gyroscope_sensor">Gyroscope Sensor</string>
+    <string name="light_sensor">Light Sensor</string>
+    <string name="distance_sensor">Distance Sensor</string>
+    <string name="temperature_sensor">Temperature Sensor</string>
+    <string name="supported">Supported</string>
+    <string name="not_supported">Not Supported</string>
+
+    <string name="uninstall">Uninstall</string>
+
+    <string name="what_issues_did_you_experience">What issues did you experience?</string>
+    <string name="we_will_improve_your_experience">We will improve your experience</string>
+    <string name="deep_Clean">Deep Clean</string>
+    <string name="ineffective_cleaning">Ineffective Cleaning</string>
+    <string name="unaware_of_other_app_features">Unaware of Other App Features</string>
+    <string name="i_not_know_what_else_this_app_can_do">I don\'t know what else this app can do.</string>
+    <string name="cleaning_did_not_feel_effective_enough">Cleaning didn\'t feel effective enough.</string>
+    <string name="discover">Discover</string>
+    <string name="not_uninstall_yet">Don\'t Uninstall yet</string>
+    <string name="still_want_to_uninstall">Still want to uninstall</string>
+
+    <string name="why_uninstall_tidyClean">Why uninstall TidyClean?</string>
+    <string name="tell_us">To help us improve, could you tell us the main reason you\'re uninstalling?</string>
+
+    <string name="lacked_features_I_wanted">Lacked features I wanted</string>
+    <string name="not_using_often">Not using it often</string>
+    <string name="i_not_need_it_anymore">I don\'t need it anymore</string>
+
+    <string name="notification_dialog_hint">Turn on notification permissions so you won\'t miss important files!</string>
+    <string name="remember">Remember, TidyClean can help with:</string>
+    <string name="quick_junk_file_scans">1.Quick junk file scans</string>
+    <string name="manage_files_title">2.Managing large files </string>
+    <string name="keeping_battery_health">3.Keeping an eye on battery health</string>
+
+
+    <string name="thank_you_for_your_feedback">Thank You for Your Feedback</string>
+    <string name="recorded">We truly appreciate you taking the time to help us improve. Your input has been recorded.</string>
+    <string name="give_us_another_try">Give Us Another Try</string>
+
+    <string name="message_notification">Message notification</string>
+    <string name="you_receive_a_new_message">you receive a new message</string>
+</resources>

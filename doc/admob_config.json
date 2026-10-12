@@ -1,0 +1,115 @@
+{
+  "openConfig": {
+    "id": "ca-app-pub-8648689202972940/7928132416",
+    "timeout": 12600000,
+    "poolSize": 1,
+    "probeConfig": {
+      "mod": "REFLECT",
+      "timeout": 3000,
+      "currency": "USD",
+      "instances": [
+        {
+          "instanceId": "instanceA",
+          "label": "labelA",
+          "ecpm": 200.00,
+          "param": ""
+        },
+        {
+          "instanceId": "instanceB",
+          "label": "labelB",
+          "ecpm": 210.00,
+          "param": ""
+        },
+        {
+          "instanceId": "instanceC",
+          "label": "labelC",
+          "ecpm": 220.00,
+          "param": ""
+        }
+      ]
+    }
+  },
+  "interConfig": {
+    "id": "ca-app-pub-8648689202972940/2537958955",
+    "timeout": 3000000,
+    "poolSize": 1,
+    "probeConfig": {
+      "mod": "REFLECT",
+      "timeout": 3000,
+      "currency": "USD",
+      "instances": [
+        {
+          "instanceId": "instanceA",
+          "label": "labelA",
+          "ecpm": 200.00,
+          "param": ""
+        },
+        {
+          "instanceId": "instanceB",
+          "label": "labelB",
+          "ecpm": 210.00,
+          "param": ""
+        },
+        {
+          "instanceId": "instanceC",
+          "label": "labelC",
+          "ecpm": 220.00,
+          "param": ""
+        }
+      ]
+    }
+  },
+  "videoConfig": {
+    "id": "ca-app-pub-8648689202972940/2537958955",
+    "timeout": 3000000,
+    "poolSize": 1,
+    "probeConfig": {
+      "mod": "REFLECT",
+      "timeout": 3000,
+      "currency": "USD",
+      "instances": [
+        {
+          "instanceId": "instanceA",
+          "label": "labelA",
+          "ecpm": 200.00,
+          "param": ""
+        },
+        {
+          "instanceId": "instanceB",
+          "label": "labelB",
+          "ecpm": 210.00,
+          "param": ""
+        },
+        {
+          "instanceId": "instanceC",
+          "label": "labelC",
+          "ecpm": 220.00,
+          "param": ""
+        }
+      ]
+    }
+  },
+  "bannerConfig": {
+    "id": ""
+  },
+  "nativeConfig": {
+    "timeout": 30000,
+    "ads": [
+      {
+        "HID": "",
+        "MID": "",
+        "LID": ""
+      },
+      {
+        "HID": "",
+        "MID": "",
+        "LID": ""
+      },
+      {
+        "HID": "",
+        "MID": "",
+        "LID": ""
+      }
+    ]
+  }
+}

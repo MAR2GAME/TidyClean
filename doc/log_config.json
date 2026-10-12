@@ -1,0 +1,8 @@
+{
+  "fbEvents": ["*"],
+  "localEvents": ["*"],
+  "thEvents": ["*"],
+  "netEvents": ["*"],
+  "reportBatchSize": 1,
+  "reportFlushIntervalMillis": 5000
+}

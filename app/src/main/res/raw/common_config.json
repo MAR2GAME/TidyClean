@@ -1,0 +1,16 @@
+{
+  "package": "com.cleantool.coolcleaner",
+  "highEcpm": 0.0,
+  "serverUrl": "https://api.newminigame.online",
+  "serverAppID": 0,
+  "serverClientKey": "",
+  "isAutoLogin": false,
+  "ABTestName": "Unknow",
+  "PlayIntegrityID": 0,
+  "parseTokenPath": "/parseToken",
+  "ipInfoPath": "/getIpInfoV2",
+  "initLogPath": "/server/user/initLog",
+  "platformLoginPath": "/server/user/platformLogin",
+  "autoLoginreflushtokenPath": "/server/user/autoLoginreflushtoken",
+  "uploadUserPath": "/server/user/uploadUser"
+}

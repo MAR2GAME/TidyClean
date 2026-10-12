@@ -1,0 +1,27 @@
+<resources>
+    <string name="clear_local_logs">清空本地日志</string>
+    <string name="clear_local_logs_confirmation">清空后无法恢复，确定继续吗？</string>
+    <string name="clear">清空</string>
+    <string name="info_details">详细信息</string>
+    <string name="info_detail_name">名称：%1$s</string>
+    <string name="info_detail_time">时间：%1$s</string>
+    <string name="info_detail_content">内容：%1$s</string>
+    <string name="refresh">Refresh</string>
+    <string name="notification_policy">通知策略</string>
+    <string name="refresh_notification_policy">刷新通知策略</string>
+    <string name="notification_policy_refreshed">通知策略已刷新</string>
+    <string name="ad_policy">广告策略</string>
+    <string name="refresh_ad_policy">刷新广告策略</string>
+    <string name="ad_policy_refreshed">广告策略已刷新</string>
+    <string name="banner_demo_title">Banner 广告示例</string>
+    <string name="show_banner">展示 Banner</string>
+    <string name="destroy_banner">销毁 Banner</string>
+    <string name="banner_status_idle">未加载 Banner</string>
+    <string name="banner_status_loading">Banner 加载中</string>
+    <string name="banner_status_showing">Banner 展示成功</string>
+    <string name="banner_status_failed">Banner 加载失败：%1$s</string>
+    <string name="banner_status_destroyed">Banner 已销毁</string>
+    <string name="banner_status_clicked">Banner 已点击</string>
+    <string name="banner_status_closed">已返回 Banner 页面</string>
+    <string name="banner_status_paid">Banner 收入回调已收到</string>
+</resources>

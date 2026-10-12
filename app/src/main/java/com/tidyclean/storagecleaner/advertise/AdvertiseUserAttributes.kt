@@ -1,7 +1,7 @@
 package com.tidyclean.storagecleaner.advertise
 
 import android.util.Log
-import com.pdffox.adv.log.ThinkingAttr
+import com.mar2sdk.core.log.ThinkingUtil
 
 object AdvertiseUserAttributes {
     private const val TAG = "AdvertiseUserAttributes"
@@ -10,9 +10,9 @@ object AdvertiseUserAttributes {
         params.forEach { (key, value) ->
             runCatching {
                 when (tag) {
-                    "user_setOnce" -> ThinkingAttr.setUserOnceAttr(key, value.toString())
-                    "user_set" -> ThinkingAttr.setUserAttr(key, value)
-                    "user_add" -> ThinkingAttr.setUserAddAttr(key, value)
+                    "user_setOnce" -> ThinkingUtil.setUserOnceAttr(key, value.toString())
+                    "user_set" -> ThinkingUtil.setUserAttr(key, value)
+                    "user_add" -> ThinkingUtil.setUserAddAttr(key, value)
                     else -> Log.w(TAG, "Unknown user attribute tag: $tag")
                 }
             }.onFailure { throwable ->

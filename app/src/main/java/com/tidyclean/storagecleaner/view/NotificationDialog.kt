@@ -10,7 +10,7 @@ import android.view.WindowManager
 import android.widget.Button
 import android.widget.TextView
 import androidx.core.graphics.drawable.toDrawable
-import com.pdffox.adv.log.LogUtil
+import com.mar2sdk.core.log.LogUtil
 import com.tidyclean.storagecleaner.R
 import com.tidyclean.storagecleaner.base.command.dp2px
 import com.tidyclean.storagecleaner.base.command.safeClick

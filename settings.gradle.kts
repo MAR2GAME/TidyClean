@@ -42,4 +42,7 @@ dependencyResolutionManagement {
 
 rootProject.name = "TidyClean"
 include(":app")
- 
+include(":core")
+include(":impl")
+include(":debug")
+

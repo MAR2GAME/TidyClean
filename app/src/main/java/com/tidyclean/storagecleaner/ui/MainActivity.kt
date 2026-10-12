@@ -18,8 +18,7 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.lifecycleScope
 import com.google.android.play.core.install.model.AppUpdateType
-import com.pdffox.adv.AdvertiseSdk
-import com.pdffox.adv.adv.AppOpenHelper
+import com.mar2sdk.core.Core
 import com.tidyclean.storagecleaner.R
 import com.tidyclean.storagecleaner.adapter.ViewPagerAdapter
 import com.tidyclean.storagecleaner.advertise.AdAreaKeys
@@ -80,7 +79,7 @@ class MainActivity : BaseViewActivity<ActivityMainBinding>() {
     ) { isGranted ->
         if (isGranted) {
             log("agree_push_permission")
-            // AdvertiseSdk.ensurePersistentNotificationServiceRunning(this)
+            Core.startFGS()
         } else {
             log("disagree_push_permission")
             Toast.makeText(this, getString(R.string.notification_dialog_hint), Toast.LENGTH_SHORT)
@@ -178,7 +177,7 @@ class MainActivity : BaseViewActivity<ActivityMainBinding>() {
 
     fun toScanActivity() {
         if (!hasStoragePermission()) {
-            AppOpenHelper.spSwitch=true
+            AdvertisePageMediator.suppressNextForegroundOpenAd()
             showStoragePermissionDialog(getString(R.string.remove_junk)) {
                 lifecycleScope.launch {
                     delay(200)
@@ -284,7 +283,7 @@ class MainActivity : BaseViewActivity<ActivityMainBinding>() {
 
     fun toLoadActivity(tag:String){
         if (!hasStoragePermission()) {
-            AppOpenHelper.spSwitch=true
+            AdvertisePageMediator.suppressNextForegroundOpenAd()
             showStoragePermissionDialog(tag) {
                 lifecycleScope.launch {
                     delay(200)
@@ -317,7 +316,7 @@ class MainActivity : BaseViewActivity<ActivityMainBinding>() {
 
     private fun ensurePersistentNotificationRunning() {
         if (checkNotificationPermission(this)){
-            AdvertiseSdk.ensurePersistentNotificationServiceRunning(this)
+            Core.startFGS()
         }
 
     }

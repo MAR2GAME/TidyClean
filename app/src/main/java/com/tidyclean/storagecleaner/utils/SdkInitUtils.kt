@@ -1,35 +1,17 @@
 package com.tidyclean.storagecleaner.utils
 
 import android.app.Application
-import android.os.Build
-import android.os.Handler
-import android.os.Looper
 import android.util.Log
-
-import com.pdffox.adv.notification.NotificationManager as AdvertiseNotificationManager
-import com.pdffox.adv.AdvertiseSdk
-import com.pdffox.adv.notification.NotificationManager
+import com.mar2sdk.core.AppMod
+import com.mar2sdk.core.Core
 import com.tidyclean.storagecleaner.BuildConfig
 import com.tidyclean.storagecleaner.advertise.AdvertiseConfigFactory
+import com.mar2sdk.impl.AppOpenAdManager
 
-import kotlinx.coroutines.CancellationException
-import kotlinx.coroutines.CompletableJob
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.SupervisorJob
-import kotlinx.coroutines.cancel
-import kotlinx.coroutines.launch
 import kotlinx.coroutines.withTimeoutOrNull
 import java.util.concurrent.atomic.AtomicBoolean
-import kotlin.apply
-import kotlin.io.bufferedReader
-import kotlin.io.readText
-import kotlin.io.use
-import kotlin.onFailure
-import kotlin.onSuccess
-import kotlin.runCatching
-import kotlin.text.isNotBlank
 
 object SdkInitUtils {
     private const val TAG = "SdkInit"
@@ -37,30 +19,35 @@ object SdkInitUtils {
     private val isInitializing = AtomicBoolean(false)
     private val isInitialized = AtomicBoolean(false)
     private var initializationJob: Job? = null
-    private val initializationScope = CoroutineScope(Dispatchers.IO + SupervisorJob())
 
     fun initSDKAsync(context: Application): Job {
+        if (isInitialized.get()) {
+            return initializationJob ?: Job().apply { complete() }
+        }
         if (isInitializing.getAndSet(true)) {
             return initializationJob ?: Job().apply { complete() }
         }
-        initializationJob = initializationScope.launch {
-            try {
-                AdvertiseSdk.init(
-                    context = context,
-                    isTest = BuildConfig.DEBUG,
-                    sdkConfig = AdvertiseConfigFactory.create(context),
-                )
-                isInitialized.set(true)
-            } catch (exception: CancellationException) {
-                throw exception
-            } catch (exception: Exception) {
-                Log.e(TAG, "Advertise SDK initialization failed; continue app startup", exception)
-                isInitialized.set(false)
-            } finally {
-                isInitializing.set(false)
-            }
+        // Core.init and the app-open lifecycle callback must be registered on the
+        // application's main thread. MyApp invokes this method from onCreate.
+        val initialization = SupervisorJob()
+        initializationJob = initialization
+        try {
+            Core.init(
+                context,
+                if (BuildConfig.DEBUG) AppMod.DEBUG else AppMod.RELEASE,
+            )
+            AdvertiseConfigFactory.applyAdmobIds()
+            AppOpenAdManager.init(context, areaKey = "foreGroundAdv")
+            isInitialized.set(true)
+            initialization.complete()
+        } catch (exception: Exception) {
+            Log.e(TAG, "Mar2 SDK initialization failed; continue app startup", exception)
+            isInitialized.set(false)
+            initialization.complete()
+        } finally {
+            isInitializing.set(false)
         }
-        return initializationJob!!
+        return initialization
     }
 
     suspend fun awaitInitialization(timeoutMs: Long? = null) {
@@ -78,7 +65,6 @@ object SdkInitUtils {
 
     fun cleanup() {
         initializationJob?.cancel()
-        initializationScope.cancel()
         initializationJob = null
         isInitialized.set(false)
         isInitializing.set(false)

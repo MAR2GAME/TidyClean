@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    tools:context=".InfoActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <TextView
+            android:id="@+id/title"
+            android:text="信息面板"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:paddingHorizontal="48dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"/>
+        <ImageView
+            android:id="@+id/back"
+            android:src="@drawable/back"
+            android:padding="10dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"/>
+        <ImageButton
+            android:id="@+id/refresh_btn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="end"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/refresh_notification_policy"
+            android:padding="12dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/refresh"
+            android:tooltipText="@string/refresh_notification_policy"
+            android:visibility="gone" />
+        <ImageButton
+            android:id="@+id/clear_logs"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="end"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/clear_local_logs"
+            android:padding="12dp"
+            android:src="@android:drawable/ic_menu_delete"
+            android:tooltipText="@string/clear_local_logs"
+            android:visibility="gone"
+            app:tint="@android:color/black"
+            tools:visibility="visible" />
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/infos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

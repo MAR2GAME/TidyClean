@@ -8,6 +8,12 @@ plugins {
     id("com.google.firebase.crashlytics")
     id("org.jetbrains.kotlin.plugin.serialization") version "2.2.20"
 }
+
+kotlin {
+	compilerOptions {
+		jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_11)
+	}
+}
 val localAdvProperties = Properties().apply {
     val localPropertiesFile = rootProject.file("local.properties")
     if (localPropertiesFile.isFile) {
@@ -42,7 +48,7 @@ fun String.asBuildConfigString(): String =
 
 android {
     namespace = "com.tidyclean.storagecleaner"
-    compileSdk = 36
+    compileSdk = 37
     packagingOptions {
         merge ("META-INF/DEPENDENCIES")
     }
@@ -140,7 +146,9 @@ dependencies {
     implementation(libs.kotlinx.coroutines.play.services)
     implementation(libs.okhttp)
     testImplementation(libs.okhttp.mockwebserver)
-    implementation("com.pdffox:advertise:1.0.12")
+    implementation(project(":impl"))
+    implementation(project(":core"))
+    debugImplementation(project(":debug"))
     implementation(platform("com.google.firebase:firebase-bom:34.1.0"))
     implementation("com.google.firebase:firebase-analytics")
     implementation("com.google.firebase:firebase-crashlytics-ndk")

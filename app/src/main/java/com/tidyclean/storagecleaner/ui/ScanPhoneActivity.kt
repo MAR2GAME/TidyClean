@@ -34,7 +34,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.chad.library.adapter.base.BaseQuickAdapter
 import com.chad.library.adapter.base.viewholder.BaseViewHolder
-import com.pdffox.adv.adv.AppOpenHelper
 import com.tidyclean.storagecleaner.ui.MainActivity
 import com.tidyclean.storagecleaner.R
 import com.tidyclean.storagecleaner.advertise.AdAreaKeys
@@ -82,7 +81,7 @@ class ScanPhoneActivity :  BaseViewActivity<ActivityScanPhoneBinding>(){
             if (hasStoragePermission()) {
                 onGetPermission()
             }else{
-                AppOpenHelper.spSwitch=true
+                AdvertisePageMediator.suppressNextForegroundOpenAd()
                 checkAndRequestPermissions(Manifest.permission.READ_EXTERNAL_STORAGE, {
                     lifecycleScope.launch {
                         delay(200)

@@ -23,9 +23,8 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.ProcessLifecycleOwner
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
-import com.pdffox.adv.AdvertiseSdk
-import com.pdffox.adv.log.LogUtil
-import com.pdffox.adv.notification.CommonService.Companion.intent
+import com.mar2sdk.core.Core
+import com.mar2sdk.core.log.LogUtil
 
 
 import com.tidyclean.storagecleaner.ui.MainActivity
@@ -153,7 +152,7 @@ class SplashActivity : BaseViewActivity<ActivitySplashBinding>() {
         logNotificationAppClick(intent)
         val notificationRoute = intent.getStringExtra("Route").orEmpty()
         if (notificationRoute.isNotBlank() && navigateFromNotificationRoute(notificationRoute)) {
-            AdvertiseSdk.setSuperProperties(mapOf("traffic_source" to "app_push"))
+            Core.setEventAttr("traffic_source", "app_push")
             scene = intent.extras?.getString("id").orEmpty()
             LogUtil.log("notification_app_clicked", mapOf("scene" to scene))
             return
@@ -170,7 +169,7 @@ class SplashActivity : BaseViewActivity<ActivitySplashBinding>() {
     private fun navigateFromShortcut() {
         val nextAction = intent.extras?.getString(AppConfig.NEXT_TAG).orEmpty()
         scene = intent.extras?.getString("id").orEmpty()
-        AdvertiseSdk.setSuperProperties(mapOf("traffic_source" to "app_shortcuts"))
+        Core.setEventAttr("traffic_source", "app_shortcuts")
         LogUtil.log("notification_app_clicked", mapOf("scene" to scene))
         when (nextAction) {
             getString(R.string.remove_junk) -> navigateToJunkFiles()
@@ -182,7 +181,7 @@ class SplashActivity : BaseViewActivity<ActivitySplashBinding>() {
     }
 
     private fun navigateFromNormalLaunch() {
-        AdvertiseSdk.setSuperProperties(mapOf("traffic_source" to null))
+        Core.setEventAttr("traffic_source", "")
         val destination = if (AppPrefsUtils.getBoolean(AppConfig.IS_SCAN_PHONE)) {
             MainActivity::class.java
         } else {

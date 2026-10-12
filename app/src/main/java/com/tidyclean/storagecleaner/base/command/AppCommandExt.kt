@@ -21,7 +21,7 @@ import android.view.View
 import androidx.core.app.NotificationManagerCompat
 import androidx.core.content.ContextCompat.checkSelfPermission
 import androidx.core.net.toUri
-import com.pdffox.adv.AdvertiseSdk
+import com.mar2sdk.core.Core
 
 import java.text.SimpleDateFormat
 import java.util.Date
@@ -40,9 +40,9 @@ fun Activity.readyGo(clazz: Class<*>?) {
 
 fun log(eventName: String, params: Map<String, Any> = emptyMap()) {
     try {
-        AdvertiseSdk.logEvent(eventName, params)
+        Core.log(eventName, params)
     } catch (e: Throwable) {
-        Log.w("AdvertiseSdk", "Failed to log event: $eventName", e)
+        Log.w("Mar2Sdk", "Failed to log event: $eventName", e)
     }
 }
 

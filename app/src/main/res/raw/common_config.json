@@ -1,16 +1,17 @@
 {
-  "package": "com.cleantool.coolcleaner",
-  "highEcpm": 0.0,
-  "serverUrl": "https://api.newminigame.online",
-  "serverAppID": 0,
-  "serverClientKey": "",
-  "isAutoLogin": false,
+  "package": "com.tidyclean.storagecleaner",
   "ABTestName": "Unknow",
   "PlayIntegrityID": 0,
+  "highEcpm": 0.0,
+  "serverUrl": "https://api-server.recoveryfiles.top/",
+  "serverAppID": 20048,
+  "serverClientKey": "e4ed6b6406a342238b068a2164ffb2c4",
+  "isAutoLogin": true,
   "parseTokenPath": "/parseToken",
   "ipInfoPath": "/getIpInfoV2",
   "initLogPath": "/server/user/initLog",
   "platformLoginPath": "/server/user/platformLogin",
   "autoLoginreflushtokenPath": "/server/user/autoLoginreflushtoken",
-  "uploadUserPath": "/server/user/uploadUser"
+  "uploadUserPath": "/server/user/uploadUser",
+  "searchConfigsPath": "/server/user/searchConfigs"
 }

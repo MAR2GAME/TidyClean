@@ -2,7 +2,7 @@
   "fbEvents": ["*"],
   "localEvents": ["*"],
   "thEvents": ["*"],
-  "netEvents": ["*"],
+  "netEvents": ["ad_revenue","ad_impression","ad_click"],
   "reportBatchSize": 1,
   "reportFlushIntervalMillis": 5000
 }

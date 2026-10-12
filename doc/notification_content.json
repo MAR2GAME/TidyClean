@@ -1,59 +1,1822 @@
 {
   "contents": [
     {
-      "Title": "Lost Photos Found!",
-      "Content": "We found 23 deleted photos. Tap to restore them instantly.",
-      "Button": "Check",
-      "Scenes": ["*"],
-      "Route": "/recoverPhotos",
+      "Title": "Need 2.1 GB Back?",
+      "Content": "Junk files may be taking up more space than you think. A quick cleanup could help.",
+      "Button": "Clean",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/junkClean",
       "Languages": {
-        "ja" :  {
-          "title": "紛失した写真が見つかりました!",
-          "content": "削除された写真が23枚見つかりました。タップするとすぐに復元できます。",
-          "button": "チェック"
-        },
-        "ko" : {
-          "title": "잃어버렸던 사진을 찾았어요!",
-          "content": "삭제된 사진 23장을 찾았습니다. 탭하면 즉시 복원됩니다.",
-          "button": "확인하다"
+        "es": {
+          "title": "¿Necesitas recuperar 2,1 GB?",
+          "content": "Los archivos basura pueden estar ocupando más espacio del que imaginas. Una limpieza rápida podría ayudar.",
+          "button": "Limpiar"
         }
       }
     },
     {
-      "Title": "That Video is Recoverable!",
-      "Content": "Your 2-minute clip from the party can be saved. Tap to restore.",
-      "Button": "Restore",
+      "Title": "1.6 GB of Junk?",
+      "Content": "Is your phone feeling cramped? Clear old cache and make room for what matters.",
+      "Button": "Clean",
       "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
-      "Route": "/recoverVideos",
+      "Route": "/junkClean",
       "Languages": {
-        "ja" :  {
-          "title": "そのビデオは回復可能です!",
-          "content": "パーティーの2分間のクリップを保存できます。タップして復元してください。",
-          "button": "復元する"
-        },
-        "ko" : {
-          "title": "해당 영상은 복구 가능합니다!",
-          "content": "파티에서 촬영한 2분짜리 영상을 저장할 수 있습니다. 탭하여 복원하세요.",
-          "button": "복원하다"
+        "es": {
+          "title": "¿1,6 GB de archivos basura?",
+          "content": "¿Sientes el teléfono apretado de espacio? Borra la caché antigua y haz sitio para lo que importa.",
+          "button": "Limpiar"
         }
       }
     },
     {
-      "Title": "Important Document Found",
-      "Content": "Your file \"Presentation.pdf\" is recoverable. Restore it now.",
+      "Title": "Storage Almost Full?",
+      "Content": "A few minutes of cleanup could make your phone feel lighter again.",
+      "Button": "Clean",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/junkClean",
+      "Languages": {
+        "es": {
+          "title": "¿El almacenamiento casi lleno?",
+          "content": "Unos minutos de limpieza podrían hacer que tu teléfono se sienta más ligero.",
+          "button": "Limpiar"
+        }
+      }
+    },
+    {
+      "Title": "842 MB Ready to Clear?",
+      "Content": "Temporary files may be piling up in the background.",
+      "Button": "Clean",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/junkClean",
+      "Languages": {
+        "es": {
+          "title": "¿842 MB listos para borrar?",
+          "content": "Los archivos temporales pueden estar acumulándose en segundo plano.",
+          "button": "Limpiar"
+        }
+      }
+    },
+    {
+      "Title": "Is Your Phone Slowing Down?",
+      "Content": "Hidden junk can build up over time and eat into performance.",
+      "Button": "Clean",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/junkClean",
+      "Languages": {
+        "es": {
+          "title": "¿Tu teléfono va más lento?",
+          "content": "La basura oculta puede acumularse con el tiempo y afectar el rendimiento.",
+          "button": "Limpiar"
+        }
+      }
+    },
+    {
+      "Title": "Only 9% Space Left?",
+      "Content": "A cleanup now could help you avoid storage warnings later.",
+      "Button": "Clean",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/junkClean",
+      "Languages": {
+        "es": {
+          "title": "¿Solo queda un 9% de espacio?",
+          "content": "Limpiar ahora podría ayudarte a evitar alertas de almacenamiento más tarde.",
+          "button": "Limpiar"
+        }
+      }
+    },
+    {
+      "Title": "3,248 Junk Files Found?",
+      "Content": "You might be closer to a storage reset than you think.",
+      "Button": "Clean",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/junkClean",
+      "Languages": {
+        "es": {
+          "title": "¿Se encontraron 3248 archivos basura?",
+          "content": "Podrías estar más cerca de recuperar espacio de lo que crees.",
+          "button": "Limpiar"
+        }
+      }
+    },
+    {
+      "Title": "Need Room for New Photos?",
+      "Content": "Old cache and leftover files could be the easiest space to clear.",
+      "Button": "Clean",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/junkClean",
+      "Languages": {
+        "es": {
+          "title": "¿Necesitas espacio para nuevas fotos?",
+          "content": "La caché vieja y los archivos residuales podrían ser el espacio más fácil de recuperar.",
+          "button": "Limpiar"
+        }
+      }
+    },
+    {
+      "Title": "Why Is Storage Disappearing?",
+      "Content": "Junk files may be quietly taking over your free space.",
+      "Button": "Clean",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/junkClean",
+      "Languages": {
+        "es": {
+          "title": "¿Por qué desaparece el almacenamiento?",
+          "content": "Los archivos basura podrían estar ocupando tu espacio libre sin que lo notes.",
+          "button": "Limpiar"
+        }
+      }
+    },
+    {
+      "Title": "2 Taps From More Space?",
+      "Content": "A quick cleanup could free up room without touching what you need.",
+      "Button": "Clean",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/junkClean",
+      "Languages": {
+        "es": {
+          "title": "¿A 2 toques de más espacio?",
+          "content": "Una limpieza rápida podría liberar espacio sin tocar lo que necesitas.",
+          "button": "Limpiar"
+        }
+      }
+    },
+    {
+      "Title": "2 Apps Worth Checking?",
+      "Content": "A quick scan can help spot risky apps before they become a problem.",
+      "Button": "Scan",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/virusAnti",
+      "Languages": {
+        "es": {
+          "title": "¿2 apps para revisar?",
+          "content": "Un escaneo rápido puede ayudar a detectar apps riesgosas antes de que causen problemas.",
+          "button": "Escanear"
+        }
+      }
+    },
+    {
+      "Title": "Feeling Unsure About a New App?",
+      "Content": "Check for threats and suspicious behavior in just a moment.",
+      "Button": "Scan",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/virusAnti",
+      "Languages": {
+        "es": {
+          "title": "¿No te convence una app nueva?",
+          "content": "Revisa amenazas y comportamiento sospechoso en un momento.",
+          "button": "Escanear"
+        }
+      }
+    },
+    {
+      "Title": "Need a Security Check?",
+      "Content": "See whether any installed apps may need a closer look.",
+      "Button": "Scan",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/virusAnti",
+      "Languages": {
+        "es": {
+          "title": "¿Necesitas una revisión de seguridad?",
+          "content": "Mira si alguna app instalada merece una revisión más de cerca.",
+          "button": "Escanear"
+        }
+      }
+    },
+    {
+      "Title": "1 App Acting Strange?",
+      "Content": "A fast scan can help you catch trouble early.",
+      "Button": "Scan",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/virusAnti",
+      "Languages": {
+        "es": {
+          "title": "¿1 app se está comportando raro?",
+          "content": "Un escaneo rápido puede ayudarte a detectar problemas a tiempo.",
+          "button": "Escanear"
+        }
+      }
+    },
+    {
+      "Title": "Could a Hidden Threat Be Lurking?",
+      "Content": "Scan your apps and get a clearer picture of your phone's safety.",
+      "Button": "Scan",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/virusAnti",
+      "Languages": {
+        "es": {
+          "title": "¿Podría haber una amenaza oculta?",
+          "content": "Escanea tus apps y obtén una idea más clara de la seguridad del teléfono.",
+          "button": "Escanear"
+        }
+      }
+    },
+    {
+      "Title": "3 Risk Alerts Waiting?",
+      "Content": "It may be a good time for a quick security scan.",
+      "Button": "Scan",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/virusAnti",
+      "Languages": {
+        "es": {
+          "title": "¿3 alertas de riesgo pendientes?",
+          "content": "Puede ser un buen momento para hacer un escaneo de seguridad rápido.",
+          "button": "Escanear"
+        }
+      }
+    },
+    {
+      "Title": "Want Peace of Mind?",
+      "Content": "A quick scan can help you feel better about what's installed.",
+      "Button": "Scan",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/virusAnti",
+      "Languages": {
+        "es": {
+          "title": "¿Quieres quedarte más tranquilo?",
+          "content": "Un escaneo rápido puede ayudarte a sentirte mejor con lo que tienes instalado.",
+          "button": "Escanear"
+        }
+      }
+    },
+    {
+      "Title": "Is Your Phone Fully Protected?",
+      "Content": "A quick check could uncover apps that deserve attention.",
+      "Button": "Scan",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/virusAnti",
+      "Languages": {
+        "es": {
+          "title": "¿Tu teléfono está bien protegido?",
+          "content": "Una revisión rápida podría descubrir apps que merecen atención.",
+          "button": "Escanear"
+        }
+      }
+    },
+    {
+      "Title": "Suspicious App Downloaded?",
+      "Content": "If something feels off, a scan can help confirm it.",
+      "Button": "Scan",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/virusAnti",
+      "Languages": {
+        "es": {
+          "title": "¿Descargaste una app sospechosa?",
+          "content": "Si algo te da mala espina, un escaneo puede ayudarte a confirmarlo.",
+          "button": "Escanear"
+        }
+      }
+    },
+    {
+      "Title": "5 Days Since Your Last Scan?",
+      "Content": "It might be worth checking your apps again.",
+      "Button": "Scan",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/virusAnti",
+      "Languages": {
+        "es": {
+          "title": "¿5 días desde tu último escaneo?",
+          "content": "Puede valer la pena volver a revisar tus apps.",
+          "button": "Escanear"
+        }
+      }
+    },
+    {
+      "Title": "Need More Privacy?",
+      "Content": "Lock the apps you would rather keep to yourself with a secure PIN.",
+      "Button": "Lock",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/appLock",
+      "Languages": {
+        "es": {
+          "title": "¿Necesitas más privacidad?",
+          "content": "Bloquea con un PIN seguro las apps que prefieres mantener solo para ti.",
+          "button": "Bloquear"
+        }
+      }
+    },
+    {
+      "Title": "3 Private Apps Unprotected?",
+      "Content": "Add a PIN before someone else taps into your personal space.",
+      "Button": "Lock",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/appLock",
+      "Languages": {
+        "es": {
+          "title": "¿3 apps privadas sin proteger?",
+          "content": "Agrega un PIN antes de que alguien entre en tu espacio personal.",
+          "button": "Bloquear"
+        }
+      }
+    },
+    {
+      "Title": "Ever Hand Over Your Phone?",
+      "Content": "App Lock can help keep your chats, photos, and apps more private.",
+      "Button": "Lock",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/appLock",
+      "Languages": {
+        "es": {
+          "title": "¿Sueles prestar tu teléfono?",
+          "content": "App Lock puede ayudarte a mantener más privadas tus fotos, chats y apps.",
+          "button": "Bloquear"
+        }
+      }
+    },
+    {
+      "Title": "Want to Keep Messages Private?",
+      "Content": "Add an extra layer of protection to the apps you use most.",
+      "Button": "Lock",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/appLock",
+      "Languages": {
+        "es": {
+          "title": "¿Quieres mantener privados tus mensajes?",
+          "content": "Agrega una capa extra de protección a las apps que más usas.",
+          "button": "Bloquear"
+        }
+      }
+    },
+    {
+      "Title": "Sharing Your Phone Today?",
+      "Content": "A quick lock can help your private apps stay private.",
+      "Button": "Lock",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/appLock",
+      "Languages": {
+        "es": {
+          "title": "¿Vas a compartir tu teléfono hoy?",
+          "content": "Un bloqueo rápido puede ayudar a que tus apps privadas sigan siéndolo.",
+          "button": "Bloquear"
+        }
+      }
+    },
+    {
+      "Title": "2 Taps to More Privacy?",
+      "Content": "App Lock makes it easier to protect what matters.",
+      "Button": "Lock",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/appLock",
+      "Languages": {
+        "es": {
+          "title": "¿A 2 toques de más privacidad?",
+          "content": "App Lock hace más fácil proteger lo que te importa.",
+          "button": "Bloquear"
+        }
+      }
+    },
+    {
+      "Title": "Is Everything Still Open?",
+      "Content": "Your social, banking, and photo apps may be easier to access than you think.",
+      "Button": "Lock",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/appLock",
+      "Languages": {
+        "es": {
+          "title": "¿Todo sigue desbloqueado?",
+          "content": "Tus apps sociales, bancarias y de fotos podrían ser más fáciles de abrir de lo que crees.",
+          "button": "Bloquear"
+        }
+      }
+    },
+    {
+      "Title": "Need a Little More Control?",
+      "Content": "Choose which apps stay open and which ones stay protected.",
+      "Button": "Lock",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/appLock",
+      "Languages": {
+        "es": {
+          "title": "¿Necesitas un poco más de control?",
+          "content": "Elige qué apps quedan abiertas y cuáles prefieres proteger.",
+          "button": "Bloquear"
+        }
+      }
+    },
+    {
+      "Title": "Leaving Your Phone Unlocked?",
+      "Content": "You can still lock the apps you care about most.",
+      "Button": "Lock",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/appLock",
+      "Languages": {
+        "es": {
+          "title": "¿Dejas tu teléfono sin bloqueo?",
+          "content": "Aun así puedes bloquear las apps que más te importan.",
+          "button": "Bloquear"
+        }
+      }
+    },
+    {
+      "Title": "Want Less to Worry About?",
+      "Content": "A simple PIN can go a long way for privacy.",
+      "Button": "Lock",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/appLock",
+      "Languages": {
+        "es": {
+          "title": "¿Quieres una cosa menos de qué preocuparte?",
+          "content": "Un PIN sencillo puede marcar una gran diferencia en privacidad.",
+          "button": "Bloquear"
+        }
+      }
+    },
+    {
+      "Title": "842 Photos on Your Phone?",
+      "Content": "Your gallery may be bigger than it needs to be. Review photos and clear space.",
       "Button": "Check",
       "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
-      "Route": "/recoverFiles",
+      "Route": "/managePhotos",
       "Languages": {
-        "ja" :  {
-          "title": "重要な文書が見つかりました",
-          "content": "ファイル「Presentation.pdf」は回復可能です。今すぐ復元してください。",
-          "button": "チェック"
-        },
-        "ko" : {
-          "title": "중요 문서 발견",
-          "content": "파일 \"Presentation.pdf\"를 복구할 수 있습니다. 지금 복원하세요.",
-          "button": "확인하다"
+        "es": {
+          "title": "¿842 fotos en tu teléfono?",
+          "content": "Tu galería puede ser más grande de lo necesario. Revisa fotos y libera espacio.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "Need Room for New Photos?",
+      "Content": "Old shots and forgotten images could be using more space than expected.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/managePhotos",
+      "Languages": {
+        "es": {
+          "title": "¿Necesitas espacio para nuevas fotos?",
+          "content": "Fotos antiguas e imágenes olvidadas podrían estar usando más espacio del esperado.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "Is Your Gallery Getting Crowded?",
+      "Content": "Take a quick look through your photos before storage gets tight.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/managePhotos",
+      "Languages": {
+        "es": {
+          "title": "¿Tu galería se está llenando?",
+          "content": "Echa un vistazo rápido a tus fotos antes de que el almacenamiento se complique.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "1.3 GB in Photos?",
+      "Content": "A few old images may be taking up more room than you realize.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/managePhotos",
+      "Languages": {
+        "es": {
+          "title": "¿1,3 GB en fotos?",
+          "content": "Algunas imágenes antiguas podrían estar ocupando más espacio del que imaginas.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "Too Many Screenshots Saved?",
+      "Content": "Your photo library might have some easy space to win back.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/managePhotos",
+      "Languages": {
+        "es": {
+          "title": "¿Demasiadas capturas guardadas?",
+          "content": "Tu biblioteca de fotos podría tener espacio fácil de recuperar.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "276 Photos From Last Month?",
+      "Content": "A quick review could help you keep the ones that matter.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/managePhotos",
+      "Languages": {
+        "es": {
+          "title": "¿276 fotos del mes pasado?",
+          "content": "Una revisión rápida puede ayudarte a quedarte con las que sí importan.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "Wondering Where Storage Went?",
+      "Content": "Your gallery is often a good place to start looking.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/managePhotos",
+      "Languages": {
+        "es": {
+          "title": "¿Te preguntas en qué se fue el espacio?",
+          "content": "Tu galería suele ser un buen lugar para empezar.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "Old Photos Still Taking Space?",
+      "Content": "You may find more room than expected in just a few taps.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/managePhotos",
+      "Languages": {
+        "es": {
+          "title": "¿Las fotos antiguas siguen ocupando espacio?",
+          "content": "Podrías recuperar más espacio del que esperas en pocos toques.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "Need a Gallery Reset?",
+      "Content": "Review photos by size and clear out what you do not need.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/managePhotos",
+      "Languages": {
+        "es": {
+          "title": "¿Tu galería necesita una limpieza?",
+          "content": "Revisa las fotos por tamaño y borra lo que ya no necesitas.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "58 Large Photos Found?",
+      "Content": "The easiest storage boost may already be in your gallery.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/managePhotos",
+      "Languages": {
+        "es": {
+          "title": "¿58 fotos grandes encontradas?",
+          "content": "El impulso de espacio más fácil podría estar ya en tu galería.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "6 Big Videos Taking Space?",
+      "Content": "Large video files may be the reason your storage feels tight.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/manageVideos",
+      "Languages": {
+        "es": {
+          "title": "¿6 videos grandes ocupando espacio?",
+          "content": "Los videos pesados podrían ser la razón de que te falte espacio.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "Running Low on Storage?",
+      "Content": "Old videos are often easy to forget and hard on free space.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/manageVideos",
+      "Languages": {
+        "es": {
+          "title": "¿Te queda poco almacenamiento?",
+          "content": "Los videos antiguos son fáciles de olvidar y duros con el espacio libre.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "3.8 GB in Videos?",
+      "Content": "Take a look at your largest video files and decide what stays.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/manageVideos",
+      "Languages": {
+        "es": {
+          "title": "¿3,8 GB en videos?",
+          "content": "Mira tus videos más pesados y decide cuáles conservar.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "14 Videos Over 100 MB?",
+      "Content": "A few big clips could be using more room than expected.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/manageVideos",
+      "Languages": {
+        "es": {
+          "title": "¿14 videos de más de 100 MB?",
+          "content": "Unos cuantos clips grandes podrían estar usando más espacio del esperado.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "Need Space Fast?",
+      "Content": "Your videos may be the quickest place to free it up.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/manageVideos",
+      "Languages": {
+        "es": {
+          "title": "¿Necesitas espacio rápido?",
+          "content": "Tus videos podrían ser el lugar más rápido para liberarlo.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "Old Downloads Still There?",
+      "Content": "Videos tend to linger long after you stop watching them.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/manageVideos",
+      "Languages": {
+        "es": {
+          "title": "¿Aún guardas descargas antiguas?",
+          "content": "Los videos suelen quedarse mucho después de que dejas de verlos.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "Is Your Camera Roll Heavy?",
+      "Content": "A quick video review could make space feel a lot better.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/manageVideos",
+      "Languages": {
+        "es": {
+          "title": "¿Tu carrete pesa demasiado?",
+          "content": "Una revisión rápida de videos podría hacer que el espacio se sienta mucho mejor.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "2.4 GB You Might Not Miss?",
+      "Content": "Some old videos may be easier to let go of than you think.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/manageVideos",
+      "Languages": {
+        "es": {
+          "title": "¿2,4 GB que quizá no extrañes?",
+          "content": "Algunos videos viejos podrían ser más fáciles de borrar de lo que parece.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "Why Is Storage So Tight?",
+      "Content": "Large video files could be doing more damage than you realize.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/manageVideos",
+      "Languages": {
+        "es": {
+          "title": "¿Por qué está tan justo el almacenamiento?",
+          "content": "Los videos grandes podrían estar afectando más de lo que imaginas.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "9 Long Videos Found?",
+      "Content": "Take a closer look before your storage runs out again.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/manageVideos",
+      "Languages": {
+        "es": {
+          "title": "¿9 videos largos encontrados?",
+          "content": "Revísalos antes de volver a quedarte sin espacio.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "127 Similar Photos?",
+      "Content": "Keep the best shots and clear the repeats without digging through everything.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/manageSimilarPhotos",
+      "Languages": {
+        "es": {
+          "title": "¿127 fotos similares?",
+          "content": "Quédate con las mejores y borra las repetidas sin revisar todo una por una.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "Too Many Near-Duplicates?",
+      "Content": "Your gallery may have more repeated shots than you realize.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/manageSimilarPhotos",
+      "Languages": {
+        "es": {
+          "title": "¿Demasiadas fotos casi iguales?",
+          "content": "Tu galería podría tener más tomas repetidas de las que imaginas.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "Want a Cleaner Gallery?",
+      "Content": "Similar photos are easy to miss and often take up more space than expected.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/manageSimilarPhotos",
+      "Languages": {
+        "es": {
+          "title": "¿Quieres una galería más limpia?",
+          "content": "Las fotos similares son fáciles de pasar por alto y suelen ocupar más espacio del esperado.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "42 Duplicate Selfies?",
+      "Content": "You probably only need one great shot.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/manageSimilarPhotos",
+      "Languages": {
+        "es": {
+          "title": "¿42 selfies duplicadas?",
+          "content": "Probablemente solo necesitas una gran foto.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "Burst Photos Still There?",
+      "Content": "Similar images from one moment can add up fast.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/manageSimilarPhotos",
+      "Languages": {
+        "es": {
+          "title": "¿Siguen ahí las fotos en ráfaga?",
+          "content": "Las imágenes parecidas de un mismo momento pueden acumularse rápido.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "Need Help Choosing?",
+      "Content": "Review matching photos side by side and keep your favorites.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/manageSimilarPhotos",
+      "Languages": {
+        "es": {
+          "title": "¿Te cuesta elegir?",
+          "content": "Revisa fotos parecidas lado a lado y conserva tus favoritas.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "89 Repeats Taking Space?",
+      "Content": "A small cleanup here can make your gallery feel a lot better.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/manageSimilarPhotos",
+      "Languages": {
+        "es": {
+          "title": "¿89 fotos repetidas ocupando espacio?",
+          "content": "Una pequeña limpieza aquí puede hacer que tu galería se sienta mucho mejor.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "Why So Many Look-Alike Photos?",
+      "Content": "It might be time to sort out the duplicates.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/manageSimilarPhotos",
+      "Languages": {
+        "es": {
+          "title": "¿Por qué hay tantas fotos parecidas?",
+          "content": "Quizá ya es hora de ordenar los duplicados.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "3 Taps to a Cleaner Gallery?",
+      "Content": "Similar photo cleanup could be easier than you think.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/manageSimilarPhotos",
+      "Languages": {
+        "es": {
+          "title": "¿A 3 toques de una galería más limpia?",
+          "content": "Limpiar fotos similares puede ser más fácil de lo que crees.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "Too Many Versions of One Shot?",
+      "Content": "Keep the best one and move on.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/manageSimilarPhotos",
+      "Languages": {
+        "es": {
+          "title": "¿Demasiadas versiones de la misma foto?",
+          "content": "Quédate con la mejor y sigue adelante.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "3 Apps Took Most of Your Time",
+      "Content": "Curious which ones? Your latest app usage details are ready to check.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/appUsage",
+      "Languages": {
+        "es": {
+          "title": "3 apps se llevaron la mayor parte de tu tiempo",
+          "content": "¿Quieres saber cuáles? Tus datos de uso más recientes están listos para revisar.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "Wonder Where Your Time Went?",
+      "Content": "Your app usage report can show what has been taking the most attention.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/appUsage",
+      "Languages": {
+        "es": {
+          "title": "¿Te preguntas a dónde se fue tu tiempo?",
+          "content": "Tu informe de uso puede mostrar qué apps se están llevando más atención.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "Is One App Taking Over Your Day?",
+      "Content": "Take a look at your recent app activity and screen time habits.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/appUsage",
+      "Languages": {
+        "es": {
+          "title": "¿Una sola app se está quedando con tu día?",
+          "content": "Mira tu actividad reciente y tus hábitos de tiempo en pantalla.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "4 Hours on One App?",
+      "Content": "Your usage trend may be more surprising than expected.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/appUsage",
+      "Languages": {
+        "es": {
+          "title": "¿4 horas en una sola app?",
+          "content": "Tu tendencia de uso podría sorprenderte más de lo esperado.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "Need a Quick Reality Check?",
+      "Content": "See which apps have been getting the most of your time.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/appUsage",
+      "Languages": {
+        "es": {
+          "title": "¿Quieres ver la realidad de tu uso?",
+          "content": "Mira qué apps se están llevando más tiempo de tu día.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "Which App Gets Opened Most?",
+      "Content": "Your recent usage stats may tell an interesting story.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/appUsage",
+      "Languages": {
+        "es": {
+          "title": "¿Qué app abres más veces?",
+          "content": "Tus estadísticas recientes de uso podrían contar una historia interesante.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "More Screen Time Than Usual?",
+      "Content": "A quick check can help you spot the biggest time sinks.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/appUsage",
+      "Languages": {
+        "es": {
+          "title": "¿Más tiempo de pantalla de lo normal?",
+          "content": "Una revisión rápida puede ayudarte a detectar los mayores ladrones de tiempo.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "27 App Launches Today?",
+      "Content": "See what has been pulling you back in.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/appUsage",
+      "Languages": {
+        "es": {
+          "title": "¿27 aperturas de apps hoy?",
+          "content": "Mira qué es lo que más te está haciendo volver.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "Curious About Your Daily Habits?",
+      "Content": "Your latest usage breakdown is ready.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/appUsage",
+      "Languages": {
+        "es": {
+          "title": "¿Tienes curiosidad por tus hábitos diarios?",
+          "content": "Tu desglose de uso más reciente ya está listo.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "Want a Better Handle on Screen Time?",
+      "Content": "Start with the apps you use the most.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/appUsage",
+      "Languages": {
+        "es": {
+          "title": "¿Quieres controlar mejor tu tiempo en pantalla?",
+          "content": "Empieza por las apps que más usas.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "24 Notifications Waiting?",
+      "Content": "Your notification shade may be more crowded than it needs to be.",
+      "Button": "Clean",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/notificationClean",
+      "Languages": {
+        "es": {
+          "title": "¿24 notificaciones esperando?",
+          "content": "Tu panel de notificaciones puede estar más lleno de lo que debería.",
+          "button": "Limpiar"
+        }
+      }
+    },
+    {
+      "Title": "Too Many Alerts Piling Up?",
+      "Content": "Keep the useful ones and clear the rest in less time.",
+      "Button": "Clean",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/notificationClean",
+      "Languages": {
+        "es": {
+          "title": "¿Se acumulan demasiadas alertas?",
+          "content": "Quédate con las útiles y limpia el resto en menos tiempo.",
+          "button": "Limpiar"
+        }
+      }
+    },
+    {
+      "Title": "Is Your Notification Bar Messy?",
+      "Content": "A quick cleanup can make your screen feel a lot calmer.",
+      "Button": "Clean",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/notificationClean",
+      "Languages": {
+        "es": {
+          "title": "¿Tu barra de notificaciones es un caos?",
+          "content": "Una limpieza rápida puede hacer que tu pantalla se sienta mucho más tranquila.",
+          "button": "Limpiar"
+        }
+      }
+    },
+    {
+      "Title": "37 Alerts You Haven't Opened?",
+      "Content": "Clearing the noise could make important updates easier to spot.",
+      "Button": "Clean",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/notificationClean",
+      "Languages": {
+        "es": {
+          "title": "¿37 alertas sin abrir?",
+          "content": "Limpiar el ruido puede hacer que los avisos importantes destaquen más.",
+          "button": "Limpiar"
+        }
+      }
+    },
+    {
+      "Title": "Need a Cleaner Notification Shade?",
+      "Content": "Old alerts can pile up faster than expected.",
+      "Button": "Clean",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/notificationClean",
+      "Languages": {
+        "es": {
+          "title": "¿Quieres un panel de notificaciones más limpio?",
+          "content": "Las alertas antiguas pueden acumularse más rápido de lo que parece.",
+          "button": "Limpiar"
+        }
+      }
+    },
+    {
+      "Title": "Why So Many Notifications?",
+      "Content": "A quick cleanup may help you feel back in control.",
+      "Button": "Clean",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/notificationClean",
+      "Languages": {
+        "es": {
+          "title": "¿Por qué hay tantas notificaciones?",
+          "content": "Una limpieza rápida puede ayudarte a sentir que vuelves a tener el control.",
+          "button": "Limpiar"
+        }
+      }
+    },
+    {
+      "Title": "18 Old Alerts Still There?",
+      "Content": "You may not need all that clutter hanging around.",
+      "Button": "Clean",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/notificationClean",
+      "Languages": {
+        "es": {
+          "title": "¿18 alertas antiguas siguen ahí?",
+          "content": "Quizá no necesitas todo ese desorden ocupando espacio visual.",
+          "button": "Limpiar"
+        }
+      }
+    },
+    {
+      "Title": "Important Alerts Getting Buried?",
+      "Content": "Cleaning old notifications can help the useful ones stand out.",
+      "Button": "Clean",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/notificationClean",
+      "Languages": {
+        "es": {
+          "title": "¿Las alertas importantes se están perdiendo?",
+          "content": "Limpiar notificaciones viejas puede ayudar a que lo útil resalte.",
+          "button": "Limpiar"
+        }
+      }
+    },
+    {
+      "Title": "Your Screen Feeling Busy?",
+      "Content": "Too many notifications can make everything feel louder.",
+      "Button": "Clean",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/notificationClean",
+      "Languages": {
+        "es": {
+          "title": "¿Sientes la pantalla demasiado cargada?",
+          "content": "Demasiadas notificaciones pueden hacer que todo se sienta más ruidoso.",
+          "button": "Limpiar"
+        }
+      }
+    },
+    {
+      "Title": "2 Taps to Less Clutter?",
+      "Content": "Your notification bar could look a lot calmer in a moment.",
+      "Button": "Clean",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/notificationClean",
+      "Languages": {
+        "es": {
+          "title": "¿A 2 toques de menos desorden?",
+          "content": "Tu barra de notificaciones podría verse mucho más tranquila en un momento.",
+          "button": "Limpiar"
+        }
+      }
+    },
+    {
+      "Title": "1.4 GB from WhatsApp?",
+      "Content": "Photos, videos, and old files may be using more space than expected.",
+      "Button": "Clean",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/whatsapp",
+      "Languages": {
+        "es": {
+          "title": "¿1,4 GB de WhatsApp?",
+          "content": "Las fotos, videos y archivos antiguos podrían estar usando más espacio del esperado.",
+          "button": "Limpiar"
+        }
+      }
+    },
+    {
+      "Title": "Too Many Old WhatsApp Files?",
+      "Content": "Take a look at media you no longer need and free up space faster.",
+      "Button": "Clean",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/whatsapp",
+      "Languages": {
+        "es": {
+          "title": "¿Demasiados archivos viejos de WhatsApp?",
+          "content": "Revisa el contenido que ya no necesitas y libera espacio más rápido.",
+          "button": "Limpiar"
+        }
+      }
+    },
+    {
+      "Title": "Need Space Fast?",
+      "Content": "Your WhatsApp media might be the easiest place to start clearing storage.",
+      "Button": "Clean",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/whatsapp",
+      "Languages": {
+        "es": {
+          "title": "¿Necesitas espacio rápido?",
+          "content": "Los archivos de WhatsApp podrían ser el lugar más fácil para empezar.",
+          "button": "Limpiar"
+        }
+      }
+    },
+    {
+      "Title": "286 WhatsApp Photos Saved?",
+      "Content": "Old media can add up quickly without you noticing.",
+      "Button": "Clean",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/whatsapp",
+      "Languages": {
+        "es": {
+          "title": "¿286 fotos guardadas de WhatsApp?",
+          "content": "El contenido antiguo puede acumularse rápido sin que lo notes.",
+          "button": "Limpiar"
+        }
+      }
+    },
+    {
+      "Title": "920 MB in Chat Videos?",
+      "Content": "A quick review could free more room than you expect.",
+      "Button": "Clean",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/whatsapp",
+      "Languages": {
+        "es": {
+          "title": "¿920 MB en videos de chats?",
+          "content": "Una revisión rápida podría liberar más espacio del que esperas.",
+          "button": "Limpiar"
+        }
+      }
+    },
+    {
+      "Title": "Is WhatsApp Getting Heavy?",
+      "Content": "Large media files may be quietly taking over your storage.",
+      "Button": "Clean",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/whatsapp",
+      "Languages": {
+        "es": {
+          "title": "¿WhatsApp está pesando demasiado?",
+          "content": "Los archivos multimedia grandes podrían estar ocupando tu almacenamiento en silencio.",
+          "button": "Limpiar"
+        }
+      }
+    },
+    {
+      "Title": "So Many Forwarded Files?",
+      "Content": "WhatsApp cleanup can help clear the extras you never asked to keep.",
+      "Button": "Clean",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/whatsapp",
+      "Languages": {
+        "es": {
+          "title": "¿Demasiados archivos reenviados?",
+          "content": "La limpieza de WhatsApp puede ayudarte a borrar extras que nunca quisiste guardar.",
+          "button": "Limpiar"
+        }
+      }
+    },
+    {
+      "Title": "Need a Storage Boost Today?",
+      "Content": "WhatsApp media is often one of the fastest wins.",
+      "Button": "Clean",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/whatsapp",
+      "Languages": {
+        "es": {
+          "title": "¿Necesitas más espacio hoy?",
+          "content": "El contenido de WhatsApp suele ser una de las formas más rápidas de recuperarlo.",
+          "button": "Limpiar"
+        }
+      }
+    },
+    {
+      "Title": "63 Large WhatsApp Files?",
+      "Content": "Review what is taking up space before storage gets tighter.",
+      "Button": "Clean",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/whatsapp",
+      "Languages": {
+        "es": {
+          "title": "¿63 archivos grandes de WhatsApp?",
+          "content": "Revisa qué está ocupando espacio antes de que el almacenamiento se apriete más.",
+          "button": "Limpiar"
+        }
+      }
+    },
+    {
+      "Title": "Why Is Storage Filling Up?",
+      "Content": "Your chats may be bringing more media along than you realize.",
+      "Button": "Clean",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/whatsapp",
+      "Languages": {
+        "es": {
+          "title": "¿Por qué se está llenando el almacenamiento?",
+          "content": "Tus chats podrían estar trayendo más archivos de los que imaginas.",
+          "button": "Limpiar"
+        }
+      }
+    },
+    {
+      "Title": "1.9 GB Used Already?",
+      "Content": "See which apps may be eating through your mobile data.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/networkUsage",
+      "Languages": {
+        "es": {
+          "title": "¿1,9 GB usados ya?",
+          "content": "Mira qué apps podrían estar consumiendo tus datos móviles.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "Wonder Why Data Runs Out Fast?",
+      "Content": "Your usage breakdown can help you spot the heaviest apps.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/networkUsage",
+      "Languages": {
+        "es": {
+          "title": "¿Te preguntas por qué se acaban tan rápido los datos?",
+          "content": "Tu desglose de uso puede ayudarte a detectar las apps más pesadas.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "Is One App Burning Through Data?",
+      "Content": "Take a closer look before your next bill surprises you.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/networkUsage",
+      "Languages": {
+        "es": {
+          "title": "¿Una app se está comiendo tus datos?",
+          "content": "Revísalo antes de que la próxima factura te sorprenda.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "640 MB Used by One App?",
+      "Content": "It may be time to check what is running in the background.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/networkUsage",
+      "Languages": {
+        "es": {
+          "title": "¿640 MB usados por una sola app?",
+          "content": "Puede ser momento de revisar qué se está ejecutando en segundo plano.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "Need a Data Reality Check?",
+      "Content": "A quick look can show where your data is really going.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/networkUsage",
+      "Languages": {
+        "es": {
+          "title": "¿Quieres ver la realidad de tus datos?",
+          "content": "Una revisión rápida puede mostrar a dónde se están yendo de verdad.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "Which App Uses the Most Data?",
+      "Content": "Your latest numbers are ready to review.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/networkUsage",
+      "Languages": {
+        "es": {
+          "title": "¿Qué app usa más datos?",
+          "content": "Tus números más recientes ya están listos para revisar.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "Data Disappearing Too Fast?",
+      "Content": "Some apps may be using more than you think.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/networkUsage",
+      "Languages": {
+        "es": {
+          "title": "¿Los datos desaparecen demasiado rápido?",
+          "content": "Algunas apps podrían estar usando más de lo que crees.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "3 Apps Driving Your Data Use?",
+      "Content": "See the biggest data users in one place.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/networkUsage",
+      "Languages": {
+        "es": {
+          "title": "¿3 apps disparan tu consumo de datos?",
+          "content": "Mira en un solo lugar cuáles son las que más gastan.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "Trying to Stay Under Your Limit?",
+      "Content": "A quick check now could save you later.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/networkUsage",
+      "Languages": {
+        "es": {
+          "title": "¿Intentas mantenerte dentro de tu límite?",
+          "content": "Una revisión rápida ahora podría ahorrarte un problema después.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "Why Is Your Data Bill So High?",
+      "Content": "Your app-by-app breakdown might explain it.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/networkUsage",
+      "Languages": {
+        "es": {
+          "title": "¿Por qué tu factura de datos es tan alta?",
+          "content": "El desglose por app podría darte la respuesta.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "Want a Closer Look at Your Wi-Fi?",
+      "Content": "See details about your current Wi-Fi connection in one place.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/networkScan",
+      "Languages": {
+        "es": {
+          "title": "¿Quieres ver mejor tu Wi-Fi?",
+          "content": "Consulta en un solo lugar los detalles de tu conexión Wi-Fi actual.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "Connected Right Now?",
+      "Content": "Check your current Wi-Fi name and basic security details.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/networkScan",
+      "Languages": {
+        "es": {
+          "title": "¿Conectado ahora mismo?",
+          "content": "Revisa el nombre de tu Wi-Fi actual y sus detalles básicos de seguridad.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "Unsure About This Wi-Fi?",
+      "Content": "Review your current network info in seconds.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/networkScan",
+      "Languages": {
+        "es": {
+          "title": "¿No estás seguro de esta red Wi-Fi?",
+          "content": "Revisa la información de tu red actual en segundos.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "On Public Wi-Fi Today?",
+      "Content": "Take a quick look at your current connection details.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/networkScan",
+      "Languages": {
+        "es": {
+          "title": "¿Hoy estás en una red Wi-Fi pública?",
+          "content": "Echa un vistazo rápido a los detalles de tu conexión actual.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "Need Wi-Fi Details Fast?",
+      "Content": "Your current network info is ready whenever you need it.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/networkScan",
+      "Languages": {
+        "es": {
+          "title": "¿Necesitas ver rápido los datos del Wi-Fi?",
+          "content": "La información de tu red actual está lista cuando la necesites.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "1 Network, More Details?",
+      "Content": "See the basics of the Wi-Fi you're connected to.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/networkScan",
+      "Languages": {
+        "es": {
+          "title": "¿Una red, más detalles?",
+          "content": "Mira lo básico del Wi-Fi al que estás conectado.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "Wondering What You're Connected To?",
+      "Content": "A quick check can show your current Wi-Fi information.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/networkScan",
+      "Languages": {
+        "es": {
+          "title": "¿Quieres saber a qué estás conectado?",
+          "content": "Una revisión rápida puede mostrar la información de tu Wi-Fi actual.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "Is This the Right Network?",
+      "Content": "Check your current Wi-Fi name before you keep browsing.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/networkScan",
+      "Languages": {
+        "es": {
+          "title": "¿Es esta la red correcta?",
+          "content": "Revisa el nombre de tu Wi-Fi actual antes de seguir navegando.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "Need a Quick Wi-Fi Check?",
+      "Content": "View your current connection details in one place.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/networkScan",
+      "Languages": {
+        "es": {
+          "title": "¿Necesitas una revisión rápida del Wi-Fi?",
+          "content": "Mira los detalles de tu conexión actual en un solo lugar.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "Away From Home Wi-Fi?",
+      "Content": "It may help to take a quick look at the network you're using.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/networkScan",
+      "Languages": {
+        "es": {
+          "title": "¿Fuera del Wi-Fi de casa?",
+          "content": "Puede venir bien revisar rápidamente la red que estás usando.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "Is Your Internet Slower Than Usual?",
+      "Content": "A quick speed test can show how your connection is holding up.",
+      "Button": "Test",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/networkSpeed",
+      "Languages": {
+        "es": {
+          "title": "¿Tu internet va más lento de lo normal?",
+          "content": "Una prueba rápida puede mostrar cómo está respondiendo tu conexión.",
+          "button": "Probar"
+        }
+      }
+    },
+    {
+      "Title": "42 Mbps or Less Today?",
+      "Content": "Check your download and upload speed in just a moment.",
+      "Button": "Test",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/networkSpeed",
+      "Languages": {
+        "es": {
+          "title": "¿42 Mbps o menos hoy?",
+          "content": "Revisa tu velocidad de descarga y subida en un momento.",
+          "button": "Probar"
+        }
+      }
+    },
+    {
+      "Title": "Buffering Again?",
+      "Content": "See whether your network speed is the reason things feel slow.",
+      "Button": "Test",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/networkSpeed",
+      "Languages": {
+        "es": {
+          "title": "¿Otra vez cargando?",
+          "content": "Mira si la velocidad de tu red está detrás de esa lentitud.",
+          "button": "Probar"
+        }
+      }
+    },
+    {
+      "Title": "Need to Know if It's the Wi-Fi?",
+      "Content": "A quick test can help rule things out.",
+      "Button": "Test",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/networkSpeed",
+      "Languages": {
+        "es": {
+          "title": "¿Quieres saber si es el Wi-Fi?",
+          "content": "Una prueba rápida puede ayudarte a salir de dudas.",
+          "button": "Probar"
+        }
+      }
+    },
+    {
+      "Title": "Video Calls Feeling Choppy?",
+      "Content": "Your connection speed might be worth checking.",
+      "Button": "Test",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/networkSpeed",
+      "Languages": {
+        "es": {
+          "title": "¿Las videollamadas se cortan?",
+          "content": "Quizá valga la pena revisar la velocidad de tu conexión.",
+          "button": "Probar"
+        }
+      }
+    },
+    {
+      "Title": "18 Mbps Right Now?",
+      "Content": "See how your network is performing in real time.",
+      "Button": "Test",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/networkSpeed",
+      "Languages": {
+        "es": {
+          "title": "¿18 Mbps ahora mismo?",
+          "content": "Mira cómo está rindiendo tu red en tiempo real.",
+          "button": "Probar"
+        }
+      }
+    },
+    {
+      "Title": "Pages Taking Too Long to Load?",
+      "Content": "A quick speed test can help explain the lag.",
+      "Button": "Test",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/networkSpeed",
+      "Languages": {
+        "es": {
+          "title": "¿Las páginas tardan demasiado en cargar?",
+          "content": "Una prueba rápida puede ayudarte a explicar el retraso.",
+          "button": "Probar"
+        }
+      }
+    },
+    {
+      "Title": "Wondering If It's Your Network?",
+      "Content": "Test your speed before blaming the app.",
+      "Button": "Test",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/networkSpeed",
+      "Languages": {
+        "es": {
+          "title": "¿Te preguntas si es tu red?",
+          "content": "Prueba la velocidad antes de culpar a la app.",
+          "button": "Probar"
+        }
+      }
+    },
+    {
+      "Title": "Streaming Not Looking Great?",
+      "Content": "Your internet speed may be telling the story.",
+      "Button": "Test",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/networkSpeed",
+      "Languages": {
+        "es": {
+          "title": "¿El streaming no va tan bien?",
+          "content": "La velocidad de tu internet puede estar contando la historia.",
+          "button": "Probar"
+        }
+      }
+    },
+    {
+      "Title": "Need a Quick Connection Check?",
+      "Content": "Find out how fast your network really is.",
+      "Button": "Test",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/networkSpeed",
+      "Languages": {
+        "es": {
+          "title": "¿Necesitas revisar rápido la conexión?",
+          "content": "Descubre qué tan rápida es realmente tu red.",
+          "button": "Probar"
+        }
+      }
+    },
+    {
+      "Title": "Down to 18% Already?",
+      "Content": "Take a look at your battery details before power gets too low.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/checkBatteryInfo",
+      "Languages": {
+        "es": {
+          "title": "¿Ya vas por 18%?",
+          "content": "Mira los detalles de tu batería antes de que la carga baje demasiado.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "Is Your Battery Draining Fast?",
+      "Content": "Your battery info may explain what is going on.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/checkBatteryInfo",
+      "Languages": {
+        "es": {
+          "title": "¿La batería se está drenando rápido?",
+          "content": "La información de la batería puede ayudarte a entender qué pasa.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "Need a Quick Battery Check?",
+      "Content": "See battery level, status, and key details in one place.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/checkBatteryInfo",
+      "Languages": {
+        "es": {
+          "title": "¿Necesitas una revisión rápida de la batería?",
+          "content": "Consulta nivel, estado y datos clave de la batería en un solo lugar.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "22% Left and Dropping?",
+      "Content": "A quick check might help you plan your next charge.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/checkBatteryInfo",
+      "Languages": {
+        "es": {
+          "title": "¿22% y sigue bajando?",
+          "content": "Una revisión rápida puede ayudarte a planear mejor la próxima carga.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "Why Is Your Battery Falling So Fast?",
+      "Content": "Start with the basics and see your battery details.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/checkBatteryInfo",
+      "Languages": {
+        "es": {
+          "title": "¿Por qué baja tan rápido la batería?",
+          "content": "Empieza por lo básico y revisa sus detalles.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "Need to Check Before You Head Out?",
+      "Content": "Your battery status is ready when you are.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/checkBatteryInfo",
+      "Languages": {
+        "es": {
+          "title": "¿Quieres revisarla antes de salir?",
+          "content": "El estado de tu batería está listo cuando lo necesites.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "1 Charge, Not Enough?",
+      "Content": "A quick battery check could help make sense of it.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/checkBatteryInfo",
+      "Languages": {
+        "es": {
+          "title": "¿Una carga no te alcanza?",
+          "content": "Una revisión rápida de la batería podría ayudarte a entenderlo mejor.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "Is Your Phone Running Hot?",
+      "Content": "Your battery details may be worth a look.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/checkBatteryInfo",
+      "Languages": {
+        "es": {
+          "title": "¿Tu teléfono se está calentando?",
+          "content": "Puede valer la pena echar un vistazo a los datos de la batería.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "Battery Feeling Off Today?",
+      "Content": "Check the current level and status in seconds.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/checkBatteryInfo",
+      "Languages": {
+        "es": {
+          "title": "¿La batería se siente rara hoy?",
+          "content": "Revisa el nivel y el estado actual en segundos.",
+          "button": "Ver"
+        }
+      }
+    },
+    {
+      "Title": "Trying to Make It to Tonight?",
+      "Content": "See where your battery stands before it gets too low.",
+      "Button": "Check",
+      "Scenes": ["occur_scene_1", "occur_scene_2", "occur_scene_3"],
+      "Route": "/checkBatteryInfo",
+      "Languages": {
+        "es": {
+          "title": "¿Intentas llegar con batería hasta la noche?",
+          "content": "Mira cómo va antes de que el nivel baje demasiado.",
+          "button": "Ver"
         }
       }
     }

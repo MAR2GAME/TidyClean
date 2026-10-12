@@ -1,14 +1,14 @@
 {
-  "isSend": true,
+  "isSend": false,
   "isForegroundSend": false,
   "isScreenOffSend": false,
   "isScreenLockSend": false,
   "interval_second":  60,
-  "24HMaxBatch":  30,
-  "1HMaxBatch":  30,
-  "24HMaxItem":  500,
-  "1HMaxItem":  500,
-  "ChannelCount": 3,
+  "24HMaxBatch":  0,
+  "1HMaxBatch":  0,
+  "24HMaxItem":  0,
+  "1HMaxItem":  0,
+  "ChannelCount": 0,
   "triggers":  {
     "unlock_home_launcher" : {
       "first_delay": 300,

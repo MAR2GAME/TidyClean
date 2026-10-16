@@ -2,23 +2,9 @@
 -keepattributes Signature,InnerClasses,EnclosingMethod,*Annotation*,SourceFile,LineNumberTable
 -allowaccessmodification
 
-# Android framework and XML entry points are also covered by AAPT-generated rules.
--keep public class * extends android.app.Activity {
-    public <init>();
-}
--keep public class * extends android.app.Application {
-    public <init>();
-}
--keep public class * extends android.app.Service {
-    public <init>();
-}
--keep public class * extends android.content.BroadcastReceiver {
-    public <init>();
-}
--keep public class * extends android.content.ContentProvider {
-    public <init>();
-}
-
+# XML custom view constructors may be invoked by LayoutInflater. Android manifest
+# components are covered by AGP's generated rules, so do not keep every framework
+# component in every dependency.
 -keepclasseswithmembers,allowoptimization,allowobfuscation class * extends android.view.View {
     public <init>(android.content.Context, android.util.AttributeSet);
 }
@@ -27,15 +13,15 @@
 }
 
 # Binding classes are resolved from generic types. Their inflate method names are
-# string-based reflection entry points and must not be obfuscated.
--keep,allowoptimization,allowobfuscation class com.tidyclean.storagecleaner.databinding.**
+# string-based reflection entry points and must not be obfuscated. The classes
+# themselves may still be obfuscated because the code obtains them from Signature.
 -keepclassmembers,allowoptimization class com.tidyclean.storagecleaner.databinding.** {
     public static *** inflate(android.view.LayoutInflater);
     public static *** inflate(android.view.LayoutInflater, android.view.ViewGroup, boolean);
 }
 # ViewModels are resolved from generic types and instantiated by ViewModelProvider.
--keep,allowoptimization,allowobfuscation class com.tidyclean.storagecleaner.viewmodel.** extends androidx.lifecycle.ViewModel {
-    public <init>();
+-keep,allowoptimization,allowobfuscation class com.tidyclean.storagecleaner.viewmodle.** extends androidx.lifecycle.ViewModel {
+    <init>(...);
 }
 
 # Standard runtime contracts.
@@ -63,9 +49,24 @@
     @org.greenrobot.eventbus.Subscribe <methods>;
 }
 
-# Gson reads application model fields reflectively.
--keep,allowoptimization,allowobfuscation class com.tidyclean.storagecleaner.bean.** { *; }
--keepclassmembers,allowobfuscation class * {
+# Gson reads these application model fields reflectively. Keep the JSON field
+# names, while allowing the model class names and unused members to be obfuscated.
+-keepclassmembers,allowoptimization class com.tidyclean.storagecleaner.bean.PlayIntegrityBean {
+    <fields>;
+}
+-keepclassmembers,allowoptimization class com.tidyclean.storagecleaner.bean.AccountDetails {
+    <fields>;
+}
+-keepclassmembers,allowoptimization class com.tidyclean.storagecleaner.bean.AppIntegrity {
+    <fields>;
+}
+-keepclassmembers,allowoptimization class com.tidyclean.storagecleaner.bean.DeviceIntegrity {
+    <fields>;
+}
+-keepclassmembers,allowoptimization class com.tidyclean.storagecleaner.bean.RequestDetails {
+    <fields>;
+}
+-keepclassmembers,allowoptimization class * {
     @com.google.gson.annotations.SerializedName <fields>;
 }
 
@@ -97,99 +98,7 @@
 -dontwarn javax.annotation.**
 -dontwarn java.lang.invoke.**
 
-# Firebase
--keep class com.google.firebase.** { *; }
--dontwarn com.google.firebase.**
-# Firebase Remote Config
--keep class com.google.firebase.remoteconfig.** { *; }
-
-# Firebase Crashlytics
--keep class com.crashlytics.** { *; }
--keep class com.google.firebase.crashlytics.** { *; }
--dontwarn com.crashlytics.**
--dontwarn com.google.firebase.crashlytics.**
-
-# Firebase Analytics
--keep class com.google.firebase.analytics.FirebaseAnalytics { *; }
--keep class com.google.android.gms.measurement.AppMeasurement { *; }
--keep class com.google.android.gms.measurement.AppMeasurement$ConditionalUserProperty { *; }
--keep class com.google.android.gms.** { *; }
--dontwarn com.google.android.gms.**
-
-
-# ========== Google Firebase 消息服务 ==========
--keep class com.google.firebase.messaging.** { *; }
--keep class com.google.firebase.iid.** { *; }
-
-# ========== Google Play Services ==========
--keep class com.google.android.gms.ads.** { *; }
--keep class com.google.android.gms.common.** { *; }
--keep class com.google.android.gms.tasks.** { *; }
-# 混淆防重打包类
--keep class com.tidyclean.storagecleaner.utils.SafeChecker {*;}
--keep class com.airbnb.lottie.** { *; }
-
-
-
-
-
-# 保留 DataModel 相关的类及其公共成员（包括 getter/setter），以确保序列化正常工作
--keep class com.thinkingdata.analytics.** { *; }
--keep class cn.thinkingdata.android.** { *; }
-
-
-
-
-# Unity Ads
--keep class com.unity3d.ads.** { *; }
--dontwarn com.unity3d.ads.**
-
-# IronSource
--keep class com.ironsource.** { *; }
--dontwarn com.ironsource.**
-
-# Vungle
--keep class com.vungle.** { *; }
--dontwarn com.vungle.**
-
-# Chartboost
--keep class com.chartboost.** { *; }
--dontwarn com.chartboost.**
-
-# Fyber
--keep class com.fyber.** { *; }
--dontwarn com.fyber.**
-
-# Mintegral
--keep class com.mbridge.** { *; }
--dontwarn com.mbridge.**
-
-# ByteDance (Pangle)
--keep class com.bytedance.** { *; }
--dontwarn com.bytedance.**
-
-# InMobi
--keep class com.inmobi.** { *; }
--dontwarn com.inmobi.**
-
-# Mintegral
--keep class com.mintegral.** { *; }
--dontwarn com.mintegral.**
-
-
-# ========== Singular SDK ==========
--keep class com.singular.sdk.** { *; }
--keep class com.singular.** { *; }
--keepclassmembers class com.singular.sdk.* { *; }
-
-# ========== AppLovin ==========
--keep class com.applovin.** { *; }
--dontwarn com.applovin.**
--keep class com.applovin.sdk.** { *; }
-
-# ==========  mediation 适配器 ==========
--keep class com.applovin.mediation.** { *; }
--keep class com.google.ads.mediation.** { *; }
-
-
--keep class com.google.android.ump.** { *; }
+# Firebase, Google Mobile Ads, mediation adapters, Lottie, ThinkingData,
+# Singular and AppLovin publish consumer rules in their AARs. Do not duplicate
+# package-wide -keep rules here, because they prevent R8 from obfuscating the
+# SDK code that the libraries already describe accurately.

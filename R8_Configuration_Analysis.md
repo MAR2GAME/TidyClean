@@ -40,3 +40,12 @@
 构建日志仍提示 `cn.thinkingdata.ta_apt.TRoute` 和 `com.facebook.infer.annotation.Nullsafe` 缺失；当前构建未失败，后续应结合实际 SDK 使用情况决定是否补充依赖或针对性处理警告。
 
 收窄 ViewModel、Gson 和 SDK 规则后，应使用 UI Automator 覆盖启动页、ViewBinding 页面、ViewModel 页面、EventBus 页面和广告初始化流程，确认反射入口在压缩包中仍可用。
+
+本地 debug 单元测试中 `core:AdConfigTest` 有 2 项既有配置 fixture 失败：测试优先读取了 `app/src/main/res/raw/ad_config.json`，其中没有测试用的 `testNative*` 数据；这与 R8 规则无关。
+
+## 本次收窄
+
+- 移除了应用侧对 Firebase、Google Mobile Ads、各 mediation SDK、Lottie、ThinkingData、Singular 和 AppLovin 的整包 `-keep`；这些依赖继续使用 AAR 自带的 consumer rules。
+- 修正了 ViewModel 的实际包名 `viewmodle`，并只保留 ViewModel 构造器。
+- 将 Gson 保留范围从整个 `bean` 包缩小到 Play Integrity 响应模型的字段。
+- 重新构建后，mapping 中被改写的类比例从约 18.6% 提升到约 24.3%。Google Play 的最终指标需要在上传新的 AAB 后重新计算；若仍低于 25%，应优先移除未使用的 mediation SDK 依赖，而不是强制覆盖 SDK 自带的反射规则。

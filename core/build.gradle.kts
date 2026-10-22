@@ -67,7 +67,8 @@ dependencies {
 	implementation("com.google.ads.mediation:fyber:8.4.1.0")
 	implementation("com.google.ads.mediation:inmobi:11.1.0.0")
 	implementation("com.google.ads.mediation:ironsource:9.2.0.0")
-	implementation("com.google.ads.mediation:vungle:7.6.1.0")
+	// SDK 7.7.4 removes the blanket GMS keep rule; this adapter supports Ads 25.3.0.
+	implementation("com.google.ads.mediation:vungle:7.7.4.1")
 	implementation("com.google.ads.mediation:facebook:6.21.0.0")
 	implementation("com.google.ads.mediation:mintegral:17.0.31.0")
 	implementation("com.google.ads.mediation:pangle:8.0.0.4.0")
